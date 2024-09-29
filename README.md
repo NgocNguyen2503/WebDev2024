@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: *YourNameHere*
-* ID: *YourIdHere*
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Name: Nguyễn Quang Ngọc
+* ID: BA12-139
+* Group ID: 8
+* Project Name: Real-time Chat Application
