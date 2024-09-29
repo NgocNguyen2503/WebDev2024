@@ -10,7 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: Nguyễn Quang Ngọc
-* ID: BA12-139
+* Name: Nguyễn Minh Đức
+* ID: BA12-050
 * Group ID: 8
 * Project Name: Real-time Chat Application
