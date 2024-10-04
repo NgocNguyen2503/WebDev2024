@@ -4,14 +4,14 @@
     height: 100px;
     display: flex;
     flex-direction: row;
-    gap: 600px;
+    gap: 560px;
     align-items: center;
 
 }
 
 .login-nav-logo img {
     width: 180px;
-    margin-left: 132px;
+    margin-left: 170px;
 }
 
 .login-nav-menu {
@@ -27,10 +27,14 @@
 
 .login-nav-li {
     display: flex;
-
+    flex-direction: column;
 }
 
 .login-nav-li:hover {
-    color: rgb(0, 92, 231);
+    color: #007BFF;
     cursor: pointer;
+}
+
+.login-nav-li:active {
+    color: #0062cb;
 }

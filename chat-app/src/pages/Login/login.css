@@ -9,7 +9,7 @@
     background: rgb(255, 255, 255);
     flex-direction: column;
     gap: 5px;
-    margin-left: 132px;
+    margin-left: 170px;
     border-left: 0px;
 }
 
@@ -20,9 +20,9 @@
     flex-direction: column;
     font-weight: 700;
     font-size: 75px;
-    font-family: Helvetica, sans-serif;
+
     background-clip: text;
-    background: linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%);
+    background: linear-gradient(83.84deg, #007BFF -8.87%, #A033FF 6.54%, #FF5C87 58.58%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -30,9 +30,9 @@
 
 .login-description {
     margin-top: 20px;
-    color: #8d8d8d;
+    color: #302f2f;
     font-weight: 400;
-    font-family: Helvetica, sans-serif;
+
 }
 
 .login-container {
@@ -69,28 +69,71 @@
     height: 40px;
     border: 0;
     background: #007BFF;
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     border-radius: 50px;
-    margin-top: 5px;
     font-weight: 600;
 }
 
-.login-platform {
+.login-container button:active {
+    background: #0062cb;
+}
+
+.login-container .sign-up {
+    color: #007BFF;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.login-container .sign-up:active {
+    color: #0062cb;
+
+}
+
+.button-signup {
+    margin-top: 12px;
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
 
+.button-signup p {
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+.login-platform {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
 
 }
 
 .login-platform .microsoft {
     width: 155px;
-    height: 51px;
-    margin-top: 15px;
-    border-radius: 7px;
+    height: 50px;
+    border-radius: 9px;
 }
 
 .login-platform .appstore {
-    width: 200px;
-    height: fit-content;
+    width: 155px;
+    height: 51px;
+    border-radius: 9px;
+}
+
+.right-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 90px;
 }

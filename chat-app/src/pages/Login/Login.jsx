@@ -13,17 +13,21 @@ const Login = () => {
                 <div className="left-login">
                     <div className="login-slogan">
                         <p>Connect</p>
-                        <p>anytime,</p>
-                        <p>anywhere</p>
+                        <p>everytime,</p>
+                        <p>everywhere</p>
                     </div>
                     <div className="login-description">
-                        <p>Stay in Touch with Special People and</p>
+                        <p>Stay in Touch with your Special People and</p>
                         <p>Make New Friends!</p>
                     </div>
                     <div className="login-container">
                         <input type="email" placeholder='Email address' />
                         <input type="password" placeholder='Password' />
-                        <button>Login</button>
+                        <div className="button-signup">
+                            <button>Log in</button>
+                            <p>New to ChatApp? <span className='sign-up'>Sign up</span> now</p>
+                        </div>
+
                     </div>
                     <div className="login-platform">
                         <img className="microsoft" src={microsoft} alt="Microsoft" />
