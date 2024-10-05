@@ -73,6 +73,7 @@
     color: white;
     border-radius: 50px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .login-container button:active {
