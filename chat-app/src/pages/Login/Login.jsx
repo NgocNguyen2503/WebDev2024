@@ -3,7 +3,7 @@ import './login.css'
 import large_logo from '../../assets/logo_icon.png'
 import appstore from '../../assets/app_store.png'
 import microsoft from '../../assets/microsoft.png'
-import Login_Navbar from '../../components/loginNavBar/Login_Navbar'
+
 import { Link, Route, Routes } from 'react-router-dom'
 import Sign_up from '../Sign_up/Sign_up'
 
@@ -31,7 +31,7 @@ const Login = () => {
                             <Link to='/chat' style={{ textDecoration: "none" }}>
                                 <button>Log in</button>
                             </Link>
-                            <p>New to ChatApp? <Link to='/signup' style={{ textDecoration: "none" }}><span className='sign-up'>Sign up</span></Link> now</p>
+                            <p>New to ChatApp? <Link to='/signup' style={{ textDecoration: "none" }}><span className='sign-up-btn'>Sign up</span></Link> now</p>
                         </div>
 
                     </div>
