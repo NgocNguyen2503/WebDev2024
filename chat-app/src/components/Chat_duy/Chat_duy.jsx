@@ -69,7 +69,7 @@ const Chat_duy = () => {
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
             <p>
-            Yeah, I was thinking the same thing, Jake. At first glance, it seemed straightforward, but after reviewing the requirements in detail, I realized there’s a lot of moving parts involved. We’re going to need to coordinate with multiple departments, and the deadlines are pretty tight. Have you started mapping out how we should approach it?
+            Yeah, I was thinking the same thing, Duy. At first glance, it seemed straightforward, but after reviewing the requirements in detail, I realized there’s a lot of moving parts involved. We’re going to need to coordinate with multiple departments, and the deadlines are pretty tight. Have you started mapping out how we should approach it?
             </p>
             <div className="date">
               <span>8 minutes ago</span>

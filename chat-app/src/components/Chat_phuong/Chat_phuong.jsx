@@ -38,7 +38,7 @@ const Chat_phuong = () => {
     <div className="chat">
       <div className="top">
         <div className="user">
-          <img src={ava_group} alt="" />
+          <img src={phuong} alt="" />
           <div className="userDetails">
             <span>Phương Phạm Đức</span>
             <p>online</p>
