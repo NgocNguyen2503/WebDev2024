@@ -9,7 +9,7 @@ Students are expected to:
 
 Student Info
 
-* Name: Phạm Đức Phương
-* ID: BA12-150
+* Name: Nguyễn Quang Ngọc
+* ID: BA12-139
 * Group ID: 8
 * Project Name: Real-time Chat Application
