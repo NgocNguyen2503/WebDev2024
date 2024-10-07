@@ -8,7 +8,6 @@ Students are expected to:
 * Push your commits regularly, with proper commit messages
 
 Student Info
-=======================
 
 * Name: Phạm Đức Phương
 * ID: BA12-150
