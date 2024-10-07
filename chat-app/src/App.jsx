@@ -1,20 +1,17 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Login from './pages/Login/Login'
-import Chat from './pages/Chat/Chat'
-import ProfileUpdate from './pages/ProfileUpdate/ProfileUpdate'
-
+import Chat1Guy from './components/Chat1guy/chat1guy';
+import './App.css';
 
 const App = () => {
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<Login />} />
-        <Route path='/chat' element={<Chat />} />
-        <Route path='/profile' element={<ProfileUpdate />} />
-      </Routes>
-    </>
-  )
-}
+    <div className="app">
+      {/* Hiển thị sidebar */}
+      <Chat1Guy />
+      {/* Nội dung chính */}
+      <div className="main-content">
+        {/* Nội dung chính của ứng dụng */}
+      </div>
+    </div>
+  );
+};
 
-export default App
+export default App;
