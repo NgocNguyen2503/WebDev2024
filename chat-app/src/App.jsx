@@ -22,6 +22,8 @@ import Login_Navbar from './components/LoginNavBar/Login_Navbar'
 import InfoSection from './components/InfoSection/InfoSection';
 import Infopersonal from './components/InfoPersonal/InfoPersonal'
 
+import MainLayout from './components/left_layout/layout'
+
 const App = () => {
   const location = useLocation()
   const showNavbar = location.pathname !== '/chat';
@@ -46,6 +48,8 @@ const App = () => {
         <Route path='/chat_phuong' element={< Chat_phuong />} />
         <Route path='/infopersonal' element={< Infopersonal />} />
         <Route path='/infosection' element={< InfoSection />} />
+
+        <Route path='/LeftLayout' element={<MainLayout />} />
 
       </Routes>
     </> 
