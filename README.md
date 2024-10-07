@@ -8,14 +8,8 @@ Students are expected to:
 * Push your commits regularly, with proper commit messages
 
 Student Info
-=======================
 
-<<<<<<< HEAD
-* Name: Nguyễn Trọng Nghĩa
-* ID: BA12-138
-=======
 * Name: Nguyễn Quang Ngọc
 * ID: BA12-139
->>>>>>> upstream/main
 * Group ID: 8
 * Project Name: Real-time Chat Application
