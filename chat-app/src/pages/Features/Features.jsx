@@ -10,8 +10,16 @@ Connect with your friends and family, build your community, and deepen your inte
 
 ' />
             <Freatures_item2 title='Set the mood for your chats' content='Customize your chats with an evolving selection of themes featuring popular artists, holidays, and more' />
+            <Freatures_item1 title='A place for meaningful conversations' content='
+Connect with your friends and family, build your community, and deepen your interests.
 
+' />
+            <Freatures_item1 title='A place for meaningful conversations' content='
+Connect with your friends and family, build your community, and deepen your interests.
+
+' />
         </div>
+
     )
 }
 
