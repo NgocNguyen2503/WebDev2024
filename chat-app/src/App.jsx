@@ -19,6 +19,7 @@ import Privacy from './pages/Privacy/Privacy'
 import Login_Navbar from './components/LoginNavBar/Login_Navbar'
 
 
+import InfoSection from './components/InfoSection/InfoSection';
 
 const App = () => {
   const location = useLocation()
@@ -44,5 +45,7 @@ const App = () => {
     </>
   )
 }
+
+
 
 export default App

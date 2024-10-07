@@ -1,0 +1,160 @@
+.info-section {
+  background-color: white;
+  width: 330px;
+  height: 100vh;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-container {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.status {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  text-align: center;
+  cursor: pointer;
+}
+
+.action-btn img {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.action-btn img:hover {
+  background-color: #e0e0e0;
+}
+
+.action-btn p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+}
+
+.options li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f0f0f0;
+  color: black;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.options li:hover {
+  background-color: #e0e0e0;
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 14px;
+  color: black;
+}
+
+.sub-options {
+  list-style: none;
+  padding-left: 0; /* Xóa khoảng cách thụt vào bên trái */
+}
+
+.sub-options li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #f8f8f8;
+  color: black;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  justify-content: flex-start; /* Đẩy icon và chữ về bên trái */
+}
+
+.sub-options li img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.sub-options li:hover {
+  background-color: #eaeaea;
+}
+
+.members {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.member-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #3e3b3b;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  gap: 0px;
+  flex-direction: row;
+}
+
+.member-item .admin {
+  width: 195.52px;
+}
+
+.member-item .add {
+  width: 215px;
+}
+
+.member-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px; /* Giảm khoảng cách giữa icon và chữ */
+}
+
+.member-item p {
+  margin: 0;
+}
