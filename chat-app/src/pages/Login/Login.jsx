@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './login.css'
 import large_logo from '../../assets/logo_icon.png'
 import appstore from '../../assets/app_store.png'
 import microsoft from '../../assets/microsoft.png'
-import Login_Navbar from '../../components/loginNavBar/Login_Navbar'
+
+import { Link, Route, Routes } from 'react-router-dom'
+import Sign_up from '../Sign_up/Sign_up'
 
 const Login = () => {
+
+    const [login, setLogin] = useState("")
+
     return (
         <div>
-            <Login_Navbar />
             <div className="login">
                 <div className="left-login">
                     <div className="login-slogan">
@@ -24,8 +28,10 @@ const Login = () => {
                         <input type="email" placeholder='Email address' />
                         <input type="password" placeholder='Password' />
                         <div className="button-signup">
-                            <button>Log in</button>
-                            <p>New to ChatApp? <span className='sign-up'>Sign up</span> now</p>
+                            <Link to='/chat' style={{ textDecoration: "none" }}>
+                                <button>Log in</button>
+                            </Link>
+                            <p>New to ChatApp? <Link to='/signup' style={{ textDecoration: "none" }}><span className='sign-up-btn'>Sign up</span></Link> now</p>
                         </div>
 
                     </div>

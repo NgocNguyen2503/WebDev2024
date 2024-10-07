@@ -22,7 +22,7 @@
     font-size: 75px;
 
     background-clip: text;
-    background: linear-gradient(83.84deg, #007BFF -8.87%, #A033FF 6.54%, #FF5C87 58.58%);
+    background: linear-gradient(83.84deg, #007BFF -8.87%, #33c2ff 6.54%, #50fffc 58.58%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -73,20 +73,21 @@
     color: white;
     border-radius: 50px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .login-container button:active {
     background: #0062cb;
 }
 
-.login-container .sign-up {
+.login-container .sign-up-btn {
     color: #007BFF;
     font-weight: 600;
     cursor: pointer;
     user-select: none;
 }
 
-.login-container .sign-up:active {
+.login-container .sign-up-btn:active {
     color: #0062cb;
 
 }

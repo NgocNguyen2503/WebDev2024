@@ -8,7 +8,6 @@ Students are expected to:
 * Push your commits regularly, with proper commit messages
 
 Student Info
-=======================
 
 * Name: Nguyễn Minh Đức
 * ID: BA12-050
