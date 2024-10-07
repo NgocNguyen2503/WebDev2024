@@ -35,12 +35,13 @@ const App = () => {
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/chat' element={<Chat />} />
         <Route path='/profile' element={<ProfileUpdate />} />
-        <Route path='/chat_group' element={< Chat_group/>} />
-        <Route path='/chat_nghia' element={< Chat_nghia/>} />
-        <Route path='/chat_ngoc' element={< Chat_ngoc/>} />
-        <Route path='/chat_duy' element={< Chat_duy/>} />
-        <Route path='/chat_duc' element={< Chat_duc/>} />
-        <Route path='/chat_phuong' element={< Chat_phuong/>} />
+        <Route path='/chat_group' element={< Chat_group />} />
+        <Route path='/chat_nghia' element={< Chat_nghia />} />
+        <Route path='/chat_ngoc' element={< Chat_ngoc />} />
+        <Route path='/chat_duy' element={< Chat_duy />} />
+        <Route path='/chat_duc' element={< Chat_duc />} />
+        <Route path='/chat_phuong' element={< Chat_phuong />} />
+        <Route path='/infoSection' element={<InfoSection />} />
       </Routes>
     </>
   )
