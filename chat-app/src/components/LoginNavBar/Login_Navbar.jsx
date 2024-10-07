@@ -26,6 +26,9 @@ const Login_Navbar = () => {
                     <li className='login-nav-li' onClick={() => { setMenu('privacy') }}>
                         <Link to='/privacy' style={{ textDecoration: "none" }}>Privacy & Safety</Link>{menu === 'privacy' ? <hr /> : <></>}
                     </li>
+                    <li className='login-nav-li' onClick={() => { setMenu('sign-up') }}>
+                        <Link to='/signup' style={{ textDecoration: "none", color: "#007BFF" }}>Sign up</Link>{menu === 'sign-up' ? <hr /> : <></>}
+                    </li>
                 </ul>
             </div>
         </div>
