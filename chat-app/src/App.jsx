@@ -20,6 +20,7 @@ import Login_Navbar from './components/LoginNavBar/Login_Navbar'
 
 
 import InfoSection from './components/InfoSection/InfoSection';
+import Infopersonal from './components/InfoPersonal/InfoPersonal'
 
 const App = () => {
   const location = useLocation()
@@ -35,13 +36,16 @@ const App = () => {
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/chat' element={<Chat />} />
         <Route path='/profile' element={<ProfileUpdate />} />
+
         <Route path='/chat_group' element={< Chat_group />} />
         <Route path='/chat_nghia' element={< Chat_nghia />} />
         <Route path='/chat_ngoc' element={< Chat_ngoc />} />
         <Route path='/chat_duy' element={< Chat_duy />} />
         <Route path='/chat_duc' element={< Chat_duc />} />
         <Route path='/chat_phuong' element={< Chat_phuong />} />
-        <Route path='/infoSection' element={<InfoSection />} />
+        <Route path='/infopersonal' element={< Infopersonal />} />
+        <Route path='/infosection' element={< InfoSection />} />
+
       </Routes>
     </>
   )
@@ -49,4 +53,4 @@ const App = () => {
 
 
 
-export default App
+export default App;
