@@ -5,10 +5,11 @@ import ProfileUpdate from './pages/ProfileUpdate/ProfileUpdate'
 
 import Login from './pages/Login/Login'
 import Sign_up from './pages/Sign_up/Sign_up'
-import Login_Navbar from './components/loginNavBar/Login_Navbar'
+
 import Features from './pages/Features/Features'
 import DesktopApp from './pages/DesktopApp/DesktopApp'
 import Privacy from './pages/Privacy/Privacy'
+import Login_Navbar from './components/LoginNavBar/Login_Navbar'
 
 
 import InfoSection from './components/InfoSection/InfoSection';
