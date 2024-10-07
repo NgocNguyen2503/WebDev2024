@@ -22,4 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 README.md
+=======
+README.md
+>>>>>>> upstream/main
