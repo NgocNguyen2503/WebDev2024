@@ -9,7 +9,7 @@ Students are expected to:
 
 Student Info
 
-* Name: Nguyễn Đăng Duy
-* ID: BA12-062
+* Name: Nguyễn Minh Đức
+* ID: BA12-050
 * Group ID: 8
 * Project Name: Real-time Chat Application
