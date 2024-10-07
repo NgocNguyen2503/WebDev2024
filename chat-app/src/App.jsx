@@ -20,6 +20,7 @@ import Login_Navbar from './components/LoginNavBar/Login_Navbar'
 
 
 import InfoSection from './components/InfoSection/InfoSection';
+import Infopersonal from './components/InfoPersonal/InfoPersonal'
 
 const App = () => {
   const location = useLocation()
@@ -41,6 +42,8 @@ const App = () => {
         <Route path='/chat_duy' element={< Chat_duy/>} />
         <Route path='/chat_duc' element={< Chat_duc/>} />
         <Route path='/chat_phuong' element={< Chat_phuong/>} />
+        <Route path='/infopersonal' element={< Infopersonal/>} />
+        <Route path='/infosection' element={< InfoSection/>} />
       </Routes>
     </>
   )
