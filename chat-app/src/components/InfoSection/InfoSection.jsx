@@ -30,7 +30,7 @@ const InfoSection = () => {
         <div className="avatar-container">
           <img src="/nghia_ava.png" alt="Nghia Avatar" className="avatar" />
         </div>
-        <h3>Nhóm Mobile Web Deep</h3>
+        <h3>Nhóm Web 2024</h3>
         <p className="status">Đang hoạt động</p>
       </div>
 
