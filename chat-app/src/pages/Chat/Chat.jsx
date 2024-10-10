@@ -6,7 +6,9 @@ import InfoSection from '../../components/InfoSection/InfoSection'
 const Chat = () => {
     return (
         <div className='chat'>
-            chat
+            <MainLayout />
+            <Chat_group />
+            <InfoSection />
         </div>
     )
 }
