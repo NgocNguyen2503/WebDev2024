@@ -38,9 +38,9 @@ const Chat_nghia = () => {
     <div className="chat">
       <div className="top">
         <div className="user">
-          <img src={ava_group} alt="" />
+          <img src={nghia} alt="" />
           <div className="userDetails">
-            <span>Web application</span>
+            <span>Nghia Nguyen</span>
             <p>online</p>
           </div>
         </div>

@@ -40,7 +40,7 @@ const Chat_group = () => {
         <div className="user">
           <img src={ava_group} alt="" />
           <div className="userDetails">
-            <span>Web application</span>
+            <span>Web application group</span>
             <p>online</p>
           </div>
         </div>
@@ -144,9 +144,8 @@ const Chat_group = () => {
         <div className="message own">
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
-            <img className="imgSent" src={send} alt="" />
             <p>
-            Thanks, John! I’m totally in for next weekend. I can also help with the planning—like food, activities, and stuff. Should we make it a two-day trip, or maybe extend it to three days if everyone’s schedule allows?
+            Thanks, Phuong! I’m totally in for next weekend. I can also help with the planning—like food, activities, and stuff. Should we make it a two-day trip, or maybe extend it to three days if everyone’s schedule allows?
             </p>
             <div className="date">
               <span>1 minutes ago</span>

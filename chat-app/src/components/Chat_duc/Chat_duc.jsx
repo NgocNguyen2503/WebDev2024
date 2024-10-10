@@ -69,7 +69,7 @@ const Chat_duc = () => {
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
             <p>
-            I totally understand what you mean, Lisa. My week has been pretty exhausting as well, and I’ve been craving some time outdoors. I didn’t have anything concrete planned yet, but I’ve been considering going on a hike up to that new trail in the hills. I’ve heard the views are amazing. What do you think? Or did you have something else in mind?
+            I totally understand what you mean, Duc. My week has been pretty exhausting as well, and I’ve been craving some time outdoors. I didn’t have anything concrete planned yet, but I’ve been considering going on a hike up to that new trail in the hills. I’ve heard the views are amazing. What do you think? Or did you have something else in mind?
             </p>
             <div className="date">
               <span>8 minutes ago</span>
@@ -145,7 +145,7 @@ const Chat_duc = () => {
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
             <p>
-            No problem at all, Lisa. I’m excited too! It’ll be nice to catch up and enjoy some nature at the same time. I’ll see you Saturday morning then. Don’t worry, I’ll make sure the coffee’s ready when you arrive!
+            No problem at all, Duc. I’m excited too! It’ll be nice to catch up and enjoy some nature at the same time. I’ll see you Saturday morning then. Don’t worry, I’ll make sure the coffee’s ready when you arrive!
             </p>
             <div className="date">
               <span>1 minutes ago</span>
