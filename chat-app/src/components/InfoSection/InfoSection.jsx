@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import './InfoSection.css';
 
 const InfoSection = () => {
@@ -6,6 +6,25 @@ const InfoSection = () => {
   const [showChatSettings, setShowChatSettings] = useState(false);
   const [showMembers, setShowMembers] = useState(false);
   const [showFiles, setShowFiles] = useState(false); // State for File options
+  const [activeSection, setActiveSection] = useState(null);
+  const [isPinnedMessageVisible, setIsPinnedMessageVisible] = useState(false); // State cho modal ghim tin nhắn
+  const [popupType, setPopupType] = useState(''); // State quản lý loại pop-up hiện tại
+
+  const toggleSection = (section) => {
+    setActiveSection(activeSection === section ? null : section);
+  };
+
+  const togglePinnedMessageModal = () => {
+    setIsPinnedMessageVisible(!isPinnedMessageVisible); // Hiển thị hoặc ẩn modal ghim tin nhắn
+  };
+
+  const openPopup = (type) => {
+    setPopupType(type); // Hiển thị modal tương ứng với loại nút được nhấn
+  };
+
+  const closePopup = () => {
+    setPopupType(''); // Đóng modal
+  };
 
   const toggleChatInfo = () => {
     setShowChatInfo(!showChatInfo);
@@ -30,7 +49,7 @@ const InfoSection = () => {
         <div className="avatar-container">
           <img src="/nghia_ava.png" alt="Nghia Avatar" className="avatar" />
         </div>
-        <h3>Nhóm Mobile Web Deep</h3>
+        <h3>Nhóm Web 2024</h3>
         <p className="status">Đang hoạt động</p>
       </div>
 
@@ -54,7 +73,7 @@ const InfoSection = () => {
         </li>
         {showChatInfo && (
           <ul className="sub-options">
-            <li>
+            <li onClick={togglePinnedMessageModal}>
               <img src="/pin.png" alt="Pin Icon" className="icon" />
               Xem tin nhắn đã ghim
             </li>
@@ -67,23 +86,23 @@ const InfoSection = () => {
         </li>
         {showChatSettings && (
           <ul className="sub-options">
-            <li>
+            <li onClick={() => openPopup('rename')}>
               <img src="/pencil.png" alt="Edit Icon" className="icon" />
               Đổi tên đoạn chat
             </li>
-            <li>
+            <li onClick={() => openPopup('changeImage')}>
               <img src="/image_icon.png" alt="Photo Icon" className="icon" />
               Thay đổi ảnh
             </li>
-            <li>
+            <li onClick={() => openPopup('changeTheme')}>
               <img src="/chude.png" alt="Theme Icon" className="icon" />
               Đổi chủ đề
             </li>
-            <li>
+            <li onClick={() => openPopup('changeEmoji')}>
               <img src="/emotion.png" alt="Emoji Icon" className="icon" />
               Thay đổi biểu tượng cảm xúc
             </li>
-            <li>
+            <li onClick={() => openPopup('editNickname')}>
               <img src="/nickname.png" alt="Nickname Icon" className="icon" />
               Chỉnh sửa biệt danh
             </li>
@@ -168,15 +187,81 @@ const InfoSection = () => {
           </ul>
         )}
 
-<li className="options-item">
-  Rời nhóm
-</li>
+        <li className="options-item">
+          Rời nhóm
+        </li>
 
+        {/* Modal hiển thị tin nhắn đã ghim */}
+        {isPinnedMessageVisible && (
+          <div className="modal-overlay">
+            <div className="modal">
+              <div className="modal-header">
+                <h2>Tin nhắn đã ghim</h2>
+                <button className="close-btn" onClick={togglePinnedMessageModal}>×</button>
+              </div>
+              <div className="modal-body">
+                <img src="/pin_icon.png" alt="Pin Icon" className="modal-icon" />
+                <p>Chưa ghim tin nhắn nào</p>
+                <span>Tin nhắn đã ghim trong đoạn chat này sẽ hiển thị ở đây</span>
+              </div>
+            </div>
+          </div>
+        )}
 
-        
+        {/* Modal hiển thị cho các tùy chọn */}
+        {popupType && (
+          <div className="modal-overlay">
+            <div className="modal">
+              <div className="modal-header">
+                <h2>{getPopupTitle(popupType)}</h2>
+                <button className="close-btn" onClick={closePopup}>×</button>
+              </div>
+              <div className="modal-body">
+                {renderPopupContent(popupType)}
+              </div>
+            </div>
+          </div>
+        )}
       </ul>
     </div>
   );
+};
+
+// Hàm trả về tiêu đề của pop-up
+const getPopupTitle = (type) => {
+  switch (type) {
+    case 'rename':
+      return 'Đổi tên đoạn chat';
+    case 'changeImage':
+      return 'Thay đổi ảnh';
+    case 'changeTheme':
+      return 'Đổi chủ đề';
+    case 'changeEmoji':
+      return 'Thay đổi biểu tượng cảm xúc';
+    case 'editNickname':
+      return 'Chỉnh sửa biệt danh';
+    default:
+      return '';
+  }
+};
+
+// Hàm trả về nội dung của pop-up dựa vào loại pop-up
+const renderPopupContent = (type) => {
+  switch (type) {
+    case 'rename':
+      return <input type="text" placeholder="Nhập tên mới cho đoạn chat" />;
+    case 'changeImage':
+      return <input type="file" />;
+    case 'changeTheme':
+      return <img src="/cde.png" alt="Theme Image" style={{ width: '100%' }} />;
+    case 'changeEmoji':
+      return <img src="/emoji_a.png" alt="Theme Image" style={{ width: '100%' }} />;
+              
+    case 'editNickname':
+      return <input type="text" placeholder="Nhập biệt danh mới" />;
+    default:
+      return null;
+  }
 };
 
 export default InfoSection;

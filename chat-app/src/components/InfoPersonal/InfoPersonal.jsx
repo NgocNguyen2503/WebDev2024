@@ -46,8 +46,7 @@ return (
       </div>
   
       <div className="menu__section">
-        <p className="menu__section-title" onClick={toggleChatInfo}>
-          Thông tin về đoạn chat
+        <p className="menu__section-title" onClick={toggleChatInfo}>Thông tin về đoạn chat
           <span className="arrow">{showChatInfo ? '▲' : '▼'}</span>
         </p>
         {showChatInfo && (
@@ -63,7 +62,7 @@ return (
         
       <div className="menu__section">
         <p className="menu__section-title" onClick={toggleChatCustom}>Tùy chỉnh đoạn chat
-        <span className="arrow">{showChatInfo ? '▲' : '▼'}</span>
+        <span className="arrow">{showChatCustom ? '▲' : '▼'}</span>
         </p>
         {showChatCustom && (
           <div>
@@ -81,9 +80,8 @@ return (
       </div>
   
       <div className="menu__section">
-        <p className="menu__section-title" onClick={toggleFiles}>
-          File phương tiện & file
-          <span className="arrow">{showChatInfo ? '▲' : '▼'}</span>
+        <p className="menu__section-title" onClick={toggleFiles}>File phương tiện & file
+          <span className="arrow">{showFiles ? '▲' : '▼'}</span>
         </p>
         {showFiles && (
           <div>
@@ -96,8 +94,15 @@ return (
       </div>
   
       <div className="menu__section">
-        <p className="menu__section-title" onClick={toggleBlock}> Chặn
+        <p className="menu__section-title" onClick={toggleBlock}>Thêm 
+          <span className="arrow">{showBlock ? '▲' : '▼'}</span>
         </p>
+        {showBlock && (
+          <div>
+            <div className="menu__item">
+              <img src="/block_user.png" alt="Block Icon" className="icon" /> Chặn</div>
+          </div>
+        )}
       </div>
     </div> 
   );
