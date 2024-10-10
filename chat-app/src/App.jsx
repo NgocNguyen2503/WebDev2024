@@ -23,6 +23,7 @@ import InfoSection from './components/InfoSection/InfoSection';
 import Infopersonal from './components/InfoPersonal/InfoPersonal'
 
 import MainLayout from './components/left_layout/layout'
+import Chat_box from './components/Chat_box/Chat_box'
 
 const App = () => {
   const location = useLocation()
@@ -38,6 +39,7 @@ const App = () => {
         <Route path='/desktop-app' element={<DesktopApp />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/chat' element={<Chat />} />
+        <Route path='/chatbox' element={<Chat_box/>} ></Route>
         <Route path='/profile' element={<ProfileUpdate />} />
 
         <Route path='/chat_group' element={< Chat_group />} />
