@@ -61,6 +61,39 @@ const Privacy = () => {
 
                 </div>
             </div>
+            <hr />
+            <div className="keep-safe">
+
+                <p className="keep-safe-title">HELPING TO KEEP YOU SAFE</p>
+                <p className="keep-safe-desc">Messenger helps to keep you safe online.</p>
+
+                <div className="keep-safe-content">
+                    <p className="content-title">That’s why we’re constantly working to stop malicious activity before it reaches you.<br /> Here are the ways we work to protect your safety on Messenger:</p>
+
+                    <div className="content-cards">
+                        <div className="card1">
+                            <p className="card-title">Reduce unwanted interactions</p>
+                            <p className="card-content">We filter potentially harmful messages so they don’t reach your inbox. Safety notices may pop up in your chats to help you spot potential scams or imposters, and we detect and block millions of fake accounts on Facebook every day.</p>
+                        </div>
+
+                        <div className="card2">
+                            <p className="card-title">Control who you let in</p>
+                            <p className="card-content">Messenger continuously innovates to protect you from harm, and tools like multi block help you control your experience. You decide who reaches your Chats list, who goes to your Message Request folder, and who can’t message or call you at all.</p>
+                        </div>
+
+                        <div className="card3">
+                            <p className="card-title">Reduce the spread of misinformation</p>
+                            <p className="card-content">To help reduce the spread of viral misinformation and harmful content, we limit the number of chats a message can be forwarded to at one time. We also have additional protections in place for content that has been identified as misinformation and shared directly into ChatApp</p>
+                        </div>
+
+                        <div className="card4">
+                            <p className="card-title">Foster a safer community</p>
+                            <p className="card-content">If you come across possible harmful content or behavior, such as harassment or impersonation, please report it. If we see that it violates our Community Standards, we’ll take appropriate action, which could include disabling their account or limiting their ability to send messages.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 }
