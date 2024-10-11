@@ -1,11 +1,12 @@
 import React from 'react';
 import './ProfileSettings.css';
-import accountIcon from '../../assets/profile_icon.png'; // Biểu tượng tài khoản
+import nghia from '../../assets/nghia_img.jpg'; // Biểu tượng tài khoản
 import activeStatusIcon from '../../assets/active_status_icon.png'; // Biểu tượng trạng thái hoạt động
 import notificationSoundIcon from '../../assets/notification_sound_icon.png'; // Biểu tượng âm thanh thông báo
 import doNotDisturbIcon from '../../assets/do_not_disturb_icon.png'; // Biểu tượng không làm phiền
 import darkModeIcon from '../../assets/dark_mode_icon.png'; // Biểu tượng chế độ tối
 import logOut from '../../assets/logout.png'
+
 
 const ProfileSettings = ({ onClose }) => {
   return (
@@ -16,9 +17,9 @@ const ProfileSettings = ({ onClose }) => {
 
         {/* Thông tin tài khoản */}
         <div className="account-section">
-          <img src={accountIcon} alt="Account" className="section-icon" />
+          <img src={nghia} alt="Account" className="section-ava" />
           <div>
-            <strong>Phương Phạm Đức </strong>
+            <strong>Nghia Nguyen </strong>
             <span>Xem trang cá nhân của bạn</span>
           </div>
         </div>

@@ -51,6 +51,13 @@
   height: 20px;
   margin-right: 10px;
 }
+.section-ava{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
 
 .section h3 {
   font-size: 16px;

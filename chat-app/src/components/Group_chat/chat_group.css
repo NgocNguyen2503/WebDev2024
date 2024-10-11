@@ -2,8 +2,8 @@
     flex: 2;
     flex-direction: column;
     display: flex;
-    border-left: 1px solid #dddddd35;
-    border-right: 1px solid #dddddd35;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     height: 100%;
     /* margin-top: 1rem; */
     /* padding: 20px; */
@@ -59,6 +59,7 @@
     .center{
         padding: 20px;
         flex: 1;
+        background-color: white;
         overflow: scroll;
         display: flex;
         flex-direction: column;
@@ -128,6 +129,7 @@
         margin-top: 1rem;
         padding: 20px;
         margin-top: auto;
+        background-color: white;
 
         .messageInput{
             display: flex;

@@ -57,6 +57,7 @@
     }
 
     .center{
+        background-color: white;
         padding: 20px;
         flex: 1;
         overflow: scroll;

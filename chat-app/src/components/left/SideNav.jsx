@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; // Thêm useState từ React
 import './SideNav.css'; // Đảm bảo file CSS nằm cùng thư mục
-import profile_icon from "../../assets/profile_icon.png";
+import nghia from "../../assets/nghia_img.jpg";
 import ProfileSettings from '../profile_setting/ProfileSettings'; // Giả sử bạn có ProfileSettings component
 
 const SideNav = () => {
@@ -20,7 +20,7 @@ const SideNav = () => {
         <ul>
           <li>
             <img 
-              src={profile_icon} 
+              src={nghia} 
               alt="Profile 1" 
               className="profile-icon" 
               onClick={handleProfileClick} // Thêm sự kiện khi click vào profile icon

@@ -2,40 +2,46 @@ import React from 'react';
 import './ChatList.css'; 
 import profile_icon from "../../assets/profile_icon.png";
 import edit_icon from "../../assets/edit_icon.png";
+import nghia from '../../assets/nghia_img.jpg'
+import duy from '../../assets/duy_img.jpg'
+import ngoc from '../../assets/ngoc_img.png'
+import duc from '../../assets/duc_img.jpg'
+import phuong from '../../assets/phuong_img.jpg'
+import ava_group from '../../assets/group.png'
 
 const ChatList = () => {
   const chatItems = [
     {
       name: 'Web Application',
-      lastMessage: 'Bạn: alo123',
-      img: profile_icon, 
+      lastMessage: 'Thank, Phuong!...',
+      img: ava_group, 
     },
     {
       name: 'Phương Phạm Đức',
-      lastMessage: '...',
-      img: profile_icon, 
+      lastMessage: 'Sounds like...',
+      img: phuong, 
     },
     {
       name: 'Nguyễn Quang Ngọc',
-      lastMessage: 'Haizz',
-      img: profile_icon,
+      lastMessage: 'Yes, that...',
+      img: ngoc,
     },
     {
       name: 'Nguyễn Trọng Nghĩa',
-      lastMessage: 'ok',
-      img: profile_icon,
+      lastMessage: 'Today was...',
+      img: nghia,
     },
     {
       name: 'Nguyễn Minh Đức',
-      lastMessage: '123',
-      img: profile_icon,
+      lastMessage: 'No problem...',
+      img: duc,
     },
     {
       name: 'Nguyễn Đăng Duy',
-      lastMessage: 'Ok b oi',
-      img: profile_icon,
+      lastMessage: 'Yeah, delays...',
+      img: duy,
     }
-  ];
+  ];  
 
   return (
     <div className="chat-list">
