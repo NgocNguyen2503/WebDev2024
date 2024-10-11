@@ -9,7 +9,7 @@ const MainLayout = () => {
 
         <SideNav />
       
-      <div className="chat-list">
+      <div className="chat-listt">
         <ChatList />
       </div>
     </div>
