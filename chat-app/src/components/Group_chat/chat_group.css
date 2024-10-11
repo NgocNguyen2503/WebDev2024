@@ -1,54 +1,57 @@
-.chat{
-    flex: 2;
-    flex-direction: column;
+.chat-box {
+
     display: flex;
+    flex-direction: column;
     border-left: 1px solid white;
-    border-right: 1px solid white;
-    height: 100%;
+    border-right: 1px solid rgb(255, 255, 255);
+    width: 697px;
+    height: 806px;
+
     /* margin-top: 1rem; */
     /* padding: 20px; */
 
 
-    .top{
+    .top {
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        display: flex;
         flex-direction: row;
         position: sticky;
-        top: 0; 
-        background-color: white; 
-        border-bottom: 1px solid rgb(165, 161, 161); 
+        top: 0;
+        background-color: white;
+        border-bottom: 1px solid rgb(165, 161, 161);
         padding: 20px;
 
-        .user{
+        .user {
             display: flex;
             gap: 20px;
+            flex-direction: row;
+            align-items: center;
 
-            img{ 
+            img {
                 width: 45px;
                 height: 45px;
                 border-radius: 50%;
             }
 
-            .userDetails{
-                
+            .userDetails {
 
-                span{
+                span {
                     font-weight: bold;
                 }
 
-                p{
+                p {
                     margin-top: 5px;
                     font-size: 10px;
                 }
             }
         }
 
-        .icons{
+        .icons {
             display: flex;
             gap: 20px;
 
-            img{
+            img {
                 height: 20px;
                 height: 20px;
                 cursor: pointer;
@@ -56,59 +59,59 @@
         }
     }
 
-    .center{
+    .center {
+        width: 697px;
+        height: 700px;
         padding: 20px;
-        flex: 1;
         background-color: white;
-        overflow: scroll;
+        overflow-y: auto;
         display: flex;
         flex-direction: column;
         gap: 20px;
 
-        .message{
+        .message {
             max-width: 70%;
             display: flex;
             gap: 20px;
 
-            &.own{
+            &.own {
                 align-self: flex-end;
 
-                .messageText{
-                    p{  
-                        
+                .messageText {
+                    p {
+
                         background-color: #0077FF;
                         padding: 8px;
                         border-radius: 10px;
-                        color:white
+                        color: white
                     }
                 }
             }
 
-            img{
+            img {
                 width: 30px;
                 height: 30px;
                 border-radius: 50%;
                 object-fit: cover;
             }
 
-            .messageText{
+            .messageText {
                 flex: 1;
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
 
-                p{
+                p {
                     padding: 8px;
                     border-radius: 10px;
-                    background-color: #F0F0F0
-                    ;
+                    background-color: #F0F0F0;
                 }
 
-                span{
+                span {
                     font-size: 13px;
                 }
 
-                .imgSent{
+                .imgSent {
                     width: 100%;
                     height: 300px;
                     border-radius: 10px;
@@ -121,66 +124,59 @@
 
     }
 
-    .bottom{
+    .bottom {
+        height: 46px;
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 40px;
-        margin-top: 1rem;
-        padding: 20px;
-        margin-top: auto;
-        background-color: white;
+        gap: 10px;
+        background-color: rgb(246, 246, 246);
 
-        .messageInput{
-            display: flex;
-            gap: 20px;
-            align-items: center;
-
-            input{
-                width: 500px;
-                padding: 15px;
-                background-color: #F0F0F0;
-                border: none;
-                border: 1px solid rgb(187, 187, 187);
-                border-radius: 5px;
-            }
-
-            .send{
-                padding: 10px;
-                border-radius: 5px;
-                width: 100px;
-                border: none;
-                background-color: aliceblue;
-            }
-
-            .emoji{
-                position: relative;
-
-                .picker{
-                    position: absolute;
-                    bottom: 50px;
-                    left: 0;
-                }
-
-                img{
-                    cursor: pointer;
-                }
-            }
-        }
-
-        .icons{
-            display: flex;
-            gap: 20px;
-        }
-
-        img{
-            height: 25px;
-            width: 25px;
+        img {
+            height: 20px;
+            width: 20px;
             cursor: pointer;
         }
+
+        input {
+            width: 486px;
+            height: 38px;
+            background-color: #e4e4e4;
+            border: none;
+            border-radius: 25px;
+            padding-left: 12px;
+        }
+
+        input:focus {
+            outline: 2px solid #0077FF;
+        }
+
+
+
+        .emoji {
+            position: relative;
+
+            .picker {
+
+                position: absolute;
+                bottom: 40px;
+                left: -330px;
+            }
+
+
+        }
+
+        .send {
+            height: 38px;
+            border-radius: 8px;
+            width: 50px;
+            border: none;
+            background-color: #0077FF;
+            color: #F0F0F0;
+        }
+
+
     }
 
-    p{
-        font-size: 15px;
-    }
 }

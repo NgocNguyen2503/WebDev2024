@@ -16,13 +16,13 @@ const SideNav = () => {
 
   return (
     <div>
-      <nav className="side-nav">
+      <nav className="side-nav-bar">
         <ul>
           <li>
-            <img 
-              src={nghia} 
-              alt="Profile 1" 
-              className="profile-icon" 
+            <img
+              src={nghia}
+              alt="Profile 1"
+              className="profile-icon"
               onClick={handleProfileClick} // Thêm sự kiện khi click vào profile icon
             />
           </li>

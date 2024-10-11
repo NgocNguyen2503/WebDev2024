@@ -1,14 +1,15 @@
 .chat-list {
   /* width: 361px; */
-  height: 100vh; 
+  height: 806px;
   background-color: white;
-  border-radius: 20px; 
-  padding: 10px;
-  overflow-y: auto; 
+  border-radius: 20px;
+  padding: 15px;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 351px;
 }
 
 .chat-list-header {
@@ -19,7 +20,7 @@
 
 .chat-list-header h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -71,7 +72,7 @@
   border-bottom: 1px solid #eee;
   cursor: pointer;
   background-color: 0.3s ease, border-radius 0.3s ease;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .chat-item:hover {
