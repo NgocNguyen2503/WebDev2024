@@ -13,13 +13,10 @@ const Chat = () => {
         <LeftLayout />
       </div>
       <div className="chat-section">
-        <div class="mid">
-          <Chat_group />
-        </div>
 
-        <div class="right">
-          <InfoSection />
-        </div>
+        <Chat_group />
+        <InfoSection />
+
       </div>
 
     </div>
