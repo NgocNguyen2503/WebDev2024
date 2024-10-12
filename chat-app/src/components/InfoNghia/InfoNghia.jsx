@@ -1,7 +1,7 @@
-import './infopersonal.css';
+import './infoNghia.css';
 import { useState } from 'react';
 
-const Infopersonal = () => {
+const InfoNghia = () => {
   const [showChatInfo, setShowChatInfo] = useState(false);
   const [showChatCustom, setShowChatCustom] = useState(false);
   const [showFiles, setShowFiles] = useState(false);
@@ -42,11 +42,11 @@ return (
     
       <div className="sidebar__profile">
         <img
-          src="phuong.jpg"
+          src="nghia.jpg"
           alt="Profile"
           className="profile__image"
         />
-        <p className="profile__name">Phạm Đức Phương</p>
+        <p className="profile__name">Nghia Nguyen</p>
         <p className="status">Đang hoạt động</p>
   
         <div className="profile__actions">
@@ -187,4 +187,4 @@ const renderPopupContent = (type) => {
 };
 
 
-export default Infopersonal;
+export default InfoNghia;

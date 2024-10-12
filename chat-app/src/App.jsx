@@ -20,7 +20,11 @@ import Login_Navbar from './components/LoginNavBar/Login_Navbar'
 
 
 import InfoSection from './components/InfoSection/InfoSection';
-import Infopersonal from './components/InfoPersonal/InfoPersonal'
+import InfoDuc from './components/InfoDuc/InfoDuc';
+import InfoDuy from './components/InfoDuy/InfoDuy';
+import InfoNghia from './components/InfoNghia/InfoNghia';
+import InfoNgoc from './components/InfoNgoc/InfoNgoc';
+import InfoPhuong from './components/InfoPhuong/InfoPhuong';
 
 import MainLayout from './components/left_layout/layout'
 import Chat_box from './components/Chat_box/Chat_box'
@@ -48,7 +52,11 @@ const App = () => {
         <Route path='/chat_duy' element={< Chat_duy />} />
         <Route path='/chat_duc' element={< Chat_duc />} />
         <Route path='/chat_phuong' element={< Chat_phuong />} />
-        <Route path='/infopersonal' element={< Infopersonal />} />
+        <Route path='/infoDuc' element={< InfoDuc />} />
+        <Route path='/infoDuy' element={< InfoDuy />} />
+        <Route path='/infoNghia' element={< InfoNghia />} />
+        <Route path='/infoNgoc' element={< InfoNgoc />} />
+        <Route path='/infoPhuong' element={< InfoPhuong />} />
         <Route path='/infosection' element={< InfoSection />} />
 
         <Route path='/LeftLayout' element={<MainLayout />} />
