@@ -4,9 +4,9 @@
     flex-direction: column;
     border-left: 1px solid white;
     border-right: 1px solid rgb(255, 255, 255);
-    width: 699px;
+    width: 722px;
     height: 806px;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     /* margin-top: 1rem; */
@@ -14,8 +14,8 @@
 
 
     .top {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -64,7 +64,7 @@
     }
 
     .center {
-        width: 697px;
+        width: 720px;
         height: 700px;
         padding: 20px;
         background-color: white;
@@ -129,8 +129,8 @@
     }
 
     .bottom {
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         height: 46px;
         display: flex;
         flex-direction: row;
@@ -148,7 +148,7 @@
         input {
             width: 486px;
             height: 38px;
-            background-color: #e4e4e4;
+            background-color: #ececec;
             border: none;
             border-radius: 25px;
             padding-left: 12px;

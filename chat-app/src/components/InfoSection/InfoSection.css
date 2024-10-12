@@ -1,7 +1,7 @@
 .info-section {
   background-color: white;
-  width: 330px;
-  height: 100vh;
+  width: 355px;
+  height: 806px;
   padding: 20px;
   color: black;
   display: flex;
@@ -65,7 +65,8 @@
 }
 
 /* Gom các tùy chọn lại với nhau */
-.options li, .sub-options li {
+.options li,
+.sub-options li {
   display: flex;
   align-items: center;
   margin: 10px 0;
@@ -78,7 +79,8 @@
   border: none;
 }
 
-.options li:hover, .sub-options li:hover {
+.options li:hover,
+.sub-options li:hover {
   background-color: #d2b48c;
 }
 
@@ -133,7 +135,8 @@
   margin: 0;
 }
 
-.admin, .add {
+.admin,
+.add {
   flex-grow: 1;
 }
 
@@ -143,11 +146,13 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Làm mờ phần nền */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Làm mờ phần nền */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Đảm bảo modal luôn nổi trên các thành phần khác */
+  z-index: 1000;
+  /* Đảm bảo modal luôn nổi trên các thành phần khác */
 }
 
 /* Modal */
