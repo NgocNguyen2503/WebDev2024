@@ -83,8 +83,9 @@
   background-color: #d2b48c;
 }
 
-.arrow {
-  margin-left: auto;
+.options li .arrow,
+.sub-options li .arrow {
+  margin-left: auto; 
   font-size: 14px;
   color: black;
 }
