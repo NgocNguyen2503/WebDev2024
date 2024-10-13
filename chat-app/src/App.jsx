@@ -28,6 +28,7 @@ import InfoPhuong from './components/InfoPhuong/InfoPhuong';
 
 import MainLayout from './components/left_layout/layout'
 import Chat_box from './components/Chat_box/Chat_box'
+import Merge_duc from './components/merge_chat_info/duc/Merge_duc'
 
 const App = () => {
   const location = useLocation()
@@ -60,6 +61,7 @@ const App = () => {
         <Route path='/infosection' element={< InfoSection />} />
 
         <Route path='/LeftLayout' element={<MainLayout />} />
+        <Route path='/merge_duc' element={<Merge_duc />} />
 
       </Routes>
     </> 
