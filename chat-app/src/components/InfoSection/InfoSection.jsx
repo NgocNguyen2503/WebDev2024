@@ -5,25 +5,25 @@ const InfoSection = () => {
   const [showChatInfo, setShowChatInfo] = useState(false);
   const [showChatSettings, setShowChatSettings] = useState(false);
   const [showMembers, setShowMembers] = useState(false);
-  const [showFiles, setShowFiles] = useState(false); // State for File options
+  const [showFiles, setShowFiles] = useState(false); 
   const [activeSection, setActiveSection] = useState(null);
-  const [isPinnedMessageVisible, setIsPinnedMessageVisible] = useState(false); // State cho modal ghim tin nhắn
-  const [popupType, setPopupType] = useState(''); // State quản lý loại pop-up hiện tại
+  const [isPinnedMessageVisible, setIsPinnedMessageVisible] = useState(false); 
+  const [popupType, setPopupType] = useState(''); 
 
   const toggleSection = (section) => {
     setActiveSection(activeSection === section ? null : section);
   };
 
   const togglePinnedMessageModal = () => {
-    setIsPinnedMessageVisible(!isPinnedMessageVisible); // Hiển thị hoặc ẩn modal ghim tin nhắn
+    setIsPinnedMessageVisible(!isPinnedMessageVisible); 
   };
 
   const openPopup = (type) => {
-    setPopupType(type); // Hiển thị modal tương ứng với loại nút được nhấn
+    setPopupType(type); 
   };
 
   const closePopup = () => {
-    setPopupType(''); // Đóng modal
+    setPopupType(''); 
   };
 
   const toggleChatInfo = () => {
@@ -44,7 +44,7 @@ const InfoSection = () => {
 
   return (
     <div className="info-section">
-      {/* Avatar và tên người dùng */}
+      {}
       <div className="profile">
         <div className="avatar-container">
           <img src="/nghia_ava.png" alt="Nghia Avatar" className="avatar" />
@@ -53,7 +53,7 @@ const InfoSection = () => {
         <p className="status">Đang hoạt động</p>
       </div>
 
-      {/* Nút chuông và tìm kiếm */}
+      {}
       <div className="action-buttons">
         <div className="action-btn">
           <img src="/bell.png" alt="Bell Icon" />
@@ -65,7 +65,7 @@ const InfoSection = () => {
         </div>
       </div>
 
-      {/* Các tùy chọn */}
+      {}
       <ul className="options">
         <li onClick={toggleChatInfo}>
           Thông tin về đoạn chat
@@ -109,7 +109,7 @@ const InfoSection = () => {
           </ul>
         )}
 
-        {/* Thành viên trong đoạn chat */}
+        {}
         <li onClick={toggleMembers}>
           Thành viên trong đoạn chat
           <span className="arrow">{showMembers ? '▲' : '▼'}</span>
@@ -165,7 +165,7 @@ const InfoSection = () => {
           </ul>
         )}
 
-        {/* File phương tiện, file và liên kết */}
+        {}
         <li onClick={toggleFiles}>
           File phương tiện, file và liên kết
           <span className="arrow">{showFiles ? '▲' : '▼'}</span>
@@ -191,7 +191,7 @@ const InfoSection = () => {
           Rời nhóm
         </li>
 
-        {/* Modal hiển thị tin nhắn đã ghim */}
+        {}
         {isPinnedMessageVisible && (
           <div className="modal-overlay">
             <div className="modal">
@@ -208,7 +208,7 @@ const InfoSection = () => {
           </div>
         )}
 
-        {/* Modal hiển thị cho các tùy chọn */}
+        {}
         {popupType && (
           <div className="modal-overlay">
             <div className="modal">
@@ -227,7 +227,6 @@ const InfoSection = () => {
   );
 };
 
-// Hàm trả về tiêu đề của pop-up
 const getPopupTitle = (type) => {
   switch (type) {
     case 'rename':
@@ -245,7 +244,6 @@ const getPopupTitle = (type) => {
   }
 };
 
-// Hàm trả về nội dung của pop-up dựa vào loại pop-up
 const renderPopupContent = (type) => {
   switch (type) {
     case 'rename':
