@@ -64,7 +64,6 @@
   color: black;
 }
 
-/* Gom các tùy chọn lại với nhau */
 .options li,
 .sub-options li {
   display: flex;
@@ -84,8 +83,9 @@
   background-color: #d2b48c;
 }
 
-.arrow {
-  margin-left: auto;
+.options li .arrow,
+.sub-options li .arrow {
+  margin-left: auto; 
   font-size: 14px;
   color: black;
 }
@@ -100,7 +100,6 @@
   height: 24px;
 }
 
-/* Danh sách thành viên */
 .members {
   list-style: none;
   padding: 0;
@@ -147,15 +146,12 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Làm mờ phần nền */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  /* Đảm bảo modal luôn nổi trên các thành phần khác */
 }
 
-/* Modal */
 .modal {
   background-color: white;
   padding: 20px;
@@ -166,7 +162,6 @@
   text-align: center;
 }
 
-/* Modal header */
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -186,7 +181,6 @@
   cursor: pointer;
 }
 
-/* Modal body */
 .modal-body {
   padding: 20px 0;
 }
