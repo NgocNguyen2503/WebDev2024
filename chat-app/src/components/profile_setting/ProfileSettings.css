@@ -43,8 +43,8 @@
 .section ul li,
 .icon-text-wrapper {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  /* align-items: center; */
+  margin-bottom: 10px;
 }
 
 .section-icon {
@@ -67,6 +67,11 @@
   margin-bottom: 10px;
 }
 
+.section h5 {
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: lighter;
+}
 .section ul {
   list-style: none;
   padding: 0;
@@ -74,16 +79,14 @@
 }
 
 .section ul li {
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   justify-content: space-between;
-  /* Giữ radio button bên phải */
   margin-bottom: 10px;
 }
 
 .centered-text {
   text-align: center;
-  /* Căn giữa chữ */
 }
 
 input[type="radio"],
@@ -93,6 +96,7 @@ input[type="checkbox"] {
 
 .section ul li span {
   font-size: 14px;
+  display: flex;
 }
 
 input[type="checkbox"],

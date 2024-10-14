@@ -17,27 +17,27 @@ const ChatList = () => {
       img: ava_group, 
     },
     {
-      name: 'Phương Phạm Đức',
+      name: 'Phuong Pham Duc',
       lastMessage: 'Sounds like...',
       img: phuong, 
     },
     {
-      name: 'Nguyễn Quang Ngọc',
+      name: 'Nguyen Quang Ngoc',
       lastMessage: 'Yes, that...',
       img: ngoc,
     },
     {
-      name: 'Nguyễn Trọng Nghĩa',
+      name: 'Nguyen Trong Nghia',
       lastMessage: 'Today was...',
       img: nghia,
     },
     {
-      name: 'Nguyễn Minh Đức',
+      name: 'Nguyen Minh Duc',
       lastMessage: 'No problem...',
       img: duc,
     },
     {
-      name: 'Nguyễn Đăng Duy',
+      name: 'Nguyen Dang Duy',
       lastMessage: 'Yeah, delays...',
       img: duy,
     }
@@ -46,17 +46,13 @@ const ChatList = () => {
   return (
     <div className="chat-list">
       <div className="chat-list-header">
-        <h3>Đoạn chat</h3>
+        <h3>Chats</h3>
         <img src={edit_icon} alt="Edit" className="edit-icon" />
       </div>
       <div className="search-bar">
-        <input type="text" placeholder="Tìm kiếm trên Messenger" />
+        <input type="text" placeholder="Search Messenger" />
       </div>
-      <div className="tabs">
-        <button className="active">Hộp thư</button>
-        <button>Cộng đồng</button>
-      
-      </div>
+
       <div className='Conversations'>
       {chatItems.map((item, index) => (
         <div className="chat-item" key={index}>
