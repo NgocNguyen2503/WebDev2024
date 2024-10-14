@@ -1,10 +1,10 @@
 import React from 'react';
 import './ProfileSettings.css';
-import nghia from '../../assets/nghia_img.jpg'; // Biểu tượng tài khoản
-import activeStatusIcon from '../../assets/active_status_icon.png'; // Biểu tượng trạng thái hoạt động
-import notificationSoundIcon from '../../assets/notification_sound_icon.png'; // Biểu tượng âm thanh thông báo
-import doNotDisturbIcon from '../../assets/do_not_disturb_icon.png'; // Biểu tượng không làm phiền
-import darkModeIcon from '../../assets/dark_mode_icon.png'; // Biểu tượng chế độ tối
+import nghia from '../../assets/nghia_img.jpg'; 
+import activeStatusIcon from '../../assets/active_status_icon.png'; 
+import notificationSoundIcon from '../../assets/notification_sound_icon.png'; 
+import doNotDisturbIcon from '../../assets/do_not_disturb_icon.png'; 
+import darkModeIcon from '../../assets/dark_mode_icon.png';
 import logOut from '../../assets/logout.png'
 
 
@@ -12,66 +12,92 @@ const ProfileSettings = ({ onClose }) => {
   return (
     <div className="profile-settings-overlay">
       <div className="profile-settings">
-        <button className="close-button" onClick={onClose}>X</button>
-        <h2 className="options-title">Tùy chọn</h2> {/* Tiêu đề */}
+        <button className="close-button" onClick={onClose}>x</button>
+        <h1 className="options-title">Preferences</h1> {}
 
-        {/* Thông tin tài khoản */}
+        {}
+        
         <div className="account-section">
           <img src={nghia} alt="Account" className="section-ava" />
           <div>
-            <strong>Nghia Nguyen </strong>
-            <span>Xem trang cá nhân của bạn</span>
+            <h3>Nghia Nguyen </h3>
+            <h5>See your profile</h5>
           </div>
         </div>
+        <hr style={{ borderColor: '#4f4f4f', width: '100%', margin: '15px auto', borderWidth: '1px', opacity: 0.2 }} />
 
-        {/* Trạng thái hoạt động */}
+        {}
         <div className="section">
           <div className="icon-text-wrapper">
             <img src={activeStatusIcon} alt="Active Status" className="section-icon" />
-            <h3>Trạng thái hoạt động: ĐANG BẬT</h3>
+            <h3>Active Status: ON</h3>
           </div>
         </div>
+        <hr style={{ borderColor: '#4f4f4f', width: '100%', margin: '15px auto', borderWidth: '1px', opacity: 0.2 }} />
 
-        {/* Thông báo */}
+        {}
         <div className="section">
-          <h3>Thông báo</h3>
+          <h3>Notifications</h3>
           <ul>
-            <li>
+            <div className='account-section'>
               <img src={notificationSoundIcon} alt="Notification Sound" className="section-icon" />
-              <span>Âm thanh thông báo</span>
+              <div style={{width: 543}}>
+                <h3>
+                  Notification sounds
+                </h3>
+                <h5>
+                Use sound to notify you about incoming messages, calls, video chats, and in-app sounds
+                </h5>
+              </div>
               <input type="checkbox" />
-            </li>
-            <li>
+            </div>
+            <div className='account-section'>
               <img src={doNotDisturbIcon} alt="Do Not Disturb" className="section-icon" />
-              <span>Không làm phiền</span>
+              <div style={{width: 543}}>
+                <h3>Do Not Disturb</h3>
+                <h5>
+                Mute notifications for a specific period of time
+              </h5>
+              </div>
+
               <input type="checkbox" />
-            </li>
+            </div>
           </ul>
         </div>
+        <hr style={{ borderColor: '#4f4f4f', width: '100%', margin: '15px auto', borderWidth: '1px', opacity: 0.2 }} />
 
-        {/* Chế độ tối */}
+        {}
         <div className="section">
           <div className="icon-text-wrapper">
             <img src={darkModeIcon} alt="Dark Mode" className="section-icon" />
-            <h3 className="centered-text">Chế độ tối</h3> {/* Chỉ chữ "Chế độ tối" đứng cạnh biểu tượng */}
+            <h3 className="centered-text">Dark mode</h3> {}
           </div>
           <ul>
             <li>
-              <span className="centered-text">Đang tắt</span>
+              <span className="centered-text">Off</span>
               <input type="radio" name="theme" />
             </li>
             <li>
-              <span className="centered-text">Đang bật</span>
+              <span className="centered-text">On</span>
               <input type="radio" name="theme" />
             </li>
             <li>
-              <span className="centered-text">Tự động</span>
+              <span className="centered-text">Automatic</span>
               <input type="radio" name="theme" />
             </li>
           </ul>
         </div>
+        <hr style={{ borderColor: '#4f4f4f', width: '100%', margin: '15px auto', borderWidth: '1px', opacity: 0.2 }} />
+        <div className="section">
+          <div className="icon-text-wrapper">
+            <img src={logOut} alt="logOut" className="section-icon" />
+            <h3>Logout</h3>
+          </div>
+        </div>
       </div>
     </div>
+    
+    
   );
 };
 
