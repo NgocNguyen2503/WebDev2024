@@ -157,27 +157,24 @@ const Chat_duc = () => {
       </div>
 
       <div className="bottom">
-        <div className="icons">
-          <img src={image} alt="" />
-          <img src={cam} alt="" />
-          <img src={mic} alt="" />
-        </div>
 
-        <div className="messageInput">
-          <input
-            type="text"
-            value={text}
-            placeholder="Type a message..."
-            onChange={(e) => setText(e.target.value)}
-          />
-          <div className="emoji">
-            <img src={emoji} alt="" onClick={toggleEmojiPicker} />
-            <div className="picker">
-              {pickEmoji && <EmojiPicker onEmojiClick={handleEmo} />}
-            </div>
+        <img src={image} alt="" />
+        <img src={cam} alt="" />
+        <img src={mic} alt="" />
+
+        <input
+          type="text"
+          value={text}
+          placeholder="Type a message..."
+          onChange={(e) => setText(e.target.value)}
+        />
+        <div className="emoji">
+          <img src={emoji} alt="" onClick={toggleEmojiPicker} />
+          <div className="picker">
+            {pickEmoji && <EmojiPicker onEmojiClick={handleEmo} />}
           </div>
-          <button className="send">Send</button>
         </div>
+        <button className="send">Send</button>
       </div>
     </div>
   );

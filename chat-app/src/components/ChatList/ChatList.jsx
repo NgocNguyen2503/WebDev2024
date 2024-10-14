@@ -1,5 +1,5 @@
 import React from 'react';
-import './ChatList.css'; 
+import './ChatList.css';
 import profile_icon from "../../assets/profile_icon.png";
 import edit_icon from "../../assets/edit_icon.png";
 import nghia from '../../assets/nghia_img.jpg'
@@ -8,18 +8,19 @@ import ngoc from '../../assets/ngoc_img.png'
 import duc from '../../assets/duc_img.jpg'
 import phuong from '../../assets/phuong_img.jpg'
 import ava_group from '../../assets/group.png'
+import { Link } from 'react-router-dom';
 
 const ChatList = () => {
   const chatItems = [
     {
       name: 'Web Application',
       lastMessage: 'Thank, Phuong!...',
-      img: ava_group, 
+      img: ava_group,
     },
     {
       name: 'Phuong Pham Duc',
       lastMessage: 'Sounds like...',
-      img: phuong, 
+      img: phuong,
     },
     {
       name: 'Nguyen Quang Ngoc',
@@ -41,7 +42,7 @@ const ChatList = () => {
       lastMessage: 'Yeah, delays...',
       img: duy,
     }
-  ];  
+  ];
 
   return (
     <div className="chat-list">
@@ -54,18 +55,19 @@ const ChatList = () => {
       </div>
 
       <div className='Conversations'>
-      {chatItems.map((item, index) => (
-        <div className="chat-item" key={index}>
-          <img src={item.img} alt={item.name} className="chat-item-img" />
-          <div className="chat-item-content">
-            <h4>{item.name}</h4>
-            <p>{item.lastMessage}</p>
-          </div>
-        </div>
-            ))}
+        {chatItems.map((item, index) => (
+          <Link to={`${index + 1}`} style={{ textDecoration: 'none' }}>
+            <div className="chat-item" key={index}>
+              <img src={item.img} alt={item.name} className="chat-item-img" />
+              <div className="chat-item-content">
+                <h4>{item.name}</h4>
+                <p>{item.lastMessage}</p>
+              </div>
+            </div></Link>
+        ))}
       </div>
-      
-  
+
+
     </div>
   );
 };

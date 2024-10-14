@@ -26,13 +26,20 @@ import InfoNghia from './components/InfoNghia/InfoNghia';
 import InfoNgoc from './components/InfoNgoc/InfoNgoc';
 import InfoPhuong from './components/InfoPhuong/InfoPhuong';
 
-import MainLayout from './components/left_layout/layout'
+
 import Chat_box from './components/Chat_box/Chat_box'
 import Merge_duc from './components/merge_chat_info/duc/Merge_duc'
+import LeftLayout from './components/left_layout/Layout'
+import Chat1 from './components/merge_chat_info/Chat1/Chat1'
+import Merge_phuong from './components/merge_chat_info/phuong/Merge_phuong'
+import Merge_ngoc from './components/merge_chat_info/ngoc/Merge_ngoc'
+import Merge_nghia from './components/merge_chat_info/nghia/Merge_nghia'
+import Merge_duy from './components/merge_chat_info/duy/Merge_duy'
+
 
 const App = () => {
   const location = useLocation()
-  const showNavbar = location.pathname !== '/chat';
+  const showNavbar = location.pathname == '/' || location.pathname == '/signup ' || location.pathname == '/features';
   return (
 
     <>
@@ -43,11 +50,19 @@ const App = () => {
         <Route path='/features' element={<Features />} />
         <Route path='/desktop-app' element={<DesktopApp />} />
         <Route path='/privacy' element={<Privacy />} />
-        <Route path='/chat' element={<Chat />} />
-        <Route path='/chatbox' element={<Chat_box/>} ></Route>
-        <Route path='/profile' element={<ProfileUpdate />} />
+        <Route path='/chat' element={<Chat />} >
+          <Route path='1' element={<Chat1 />} />
+          <Route path='2' element={<Merge_phuong />} />
+          <Route path='3' element={<Merge_ngoc />} />
+          <Route path='4' element={<Merge_nghia />} />
+          <Route path='5' element={<Merge_duc />} />
+          <Route path='6' element={<Merge_duy />} />
+        </Route>
+        <Route path='/mergeduc' element={<Merge_duc />} />
+        <Route path='/chatbox' element={<Chat_box />} ></Route>
 
-        <Route path='/chat_group' element={< Chat_group />} />
+
+        {/* <Route path='/chat_group' element={< Chat_group />} />
         <Route path='/chat_nghia' element={< Chat_nghia />} />
         <Route path='/chat_ngoc' element={< Chat_ngoc />} />
         <Route path='/chat_duy' element={< Chat_duy />} />
@@ -58,13 +73,13 @@ const App = () => {
         <Route path='/infoNghia' element={< InfoNghia />} />
         <Route path='/infoNgoc' element={< InfoNgoc />} />
         <Route path='/infoPhuong' element={< InfoPhuong />} />
-        <Route path='/infosection' element={< InfoSection />} />
+        <Route path='/infosection' element={< InfoSection />} /> */}
 
-        <Route path='/LeftLayout' element={<MainLayout />} />
-        <Route path='/merge_duc' element={<Merge_duc />} />
+        {/* <Route path='/LeftLayout' element={<LeftLayout />} />
+        <Route path='/merge_duc' element={<Merge_duc />} /> */}
 
       </Routes>
-    </> 
+    </>
   )
 }
 

@@ -38,7 +38,7 @@ const Chat_ngoc = () => {
     <div className="chat">
       <div className="top">
         <div className="user">
-          <img src={ava_group} alt="" />
+          <img src={ngoc} alt="" />
           <div className="userDetails">
             <span>Nguyễn Quang Ngọc</span>
             <p>online</p>
@@ -57,7 +57,7 @@ const Chat_ngoc = () => {
           <img src={ngoc} alt="" />
           <div className="messageText">
             <p>
-            Hey Nghia, I’ve been thinking about that road trip we talked about last month. I know things got busy, but do you think we could finally make it happen next weekend?
+              Hey Nghia, I’ve been thinking about that road trip we talked about last month. I know things got busy, but do you think we could finally make it happen next weekend?
             </p>
             <div className="date">
               <span>10 minutes ago</span>
@@ -69,7 +69,7 @@ const Chat_ngoc = () => {
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
             <p>
-            Oh, I’ve been meaning to bring that up! Next weekend actually works for me. I could really use a break from the city. Did you have a specific destination in mind, or are we still going with our original plan to drive along the coast?
+              Oh, I’ve been meaning to bring that up! Next weekend actually works for me. I could really use a break from the city. Did you have a specific destination in mind, or are we still going with our original plan to drive along the coast?
             </p>
             <div className="date">
               <span>8 minutes ago</span>
@@ -82,7 +82,7 @@ const Chat_ngoc = () => {
           <img src={ngoc} alt="" />
           <div className="messageText">
             <p>
-            I was thinking we could stick with the coastal route. I’ve always wanted to check out some of those small beach towns. Plus, we could stop by that famous seafood restaurant you mentioned last time. I heard they have the best lobster rolls in the state!
+              I was thinking we could stick with the coastal route. I’ve always wanted to check out some of those small beach towns. Plus, we could stop by that famous seafood restaurant you mentioned last time. I heard they have the best lobster rolls in the state!
             </p>
             <div className="date">
               <span>7 minutes ago</span>
@@ -93,7 +93,7 @@ const Chat_ngoc = () => {
         <div className="message own">
           <div className="messageText">
             <p>
-            Yes! That seafood place is a must. I’ve been craving lobster rolls for weeks. How many days are we thinking for this trip? I’m free from Friday afternoon, so we could head out then and come back on Sunday evening if that works for you.
+              Yes! That seafood place is a must. I’ve been craving lobster rolls for weeks. How many days are we thinking for this trip? I’m free from Friday afternoon, so we could head out then and come back on Sunday evening if that works for you.
             </p>
             <div className="date">
               <span>6 minutes ago</span>
@@ -107,7 +107,7 @@ const Chat_ngoc = () => {
           <img src={ngoc} alt="" />
           <div className="messageText">
             <p>
-            That sounds perfect. I was thinking two or three days would be ideal. We can leave Friday afternoon, like you said, and take our time exploring on the way. No need to rush. I’ll book a couple of places for us to stay along the coast – maybe one night at a bed and breakfast and another at a beachside motel. What do you think?
+              That sounds perfect. I was thinking two or three days would be ideal. We can leave Friday afternoon, like you said, and take our time exploring on the way. No need to rush. I’ll book a couple of places for us to stay along the coast – maybe one night at a bed and breakfast and another at a beachside motel. What do you think?
             </p>
             <div className="date">
               <span>4 minutes ago</span>
@@ -120,7 +120,7 @@ const Chat_ngoc = () => {
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
             <p>
-            That sounds like such a good mix! A cozy bed and breakfast for one night, and then waking up to the ocean view at a motel the next day – I love it. We should definitely pack some snacks for the road, too. And don’t forget a good playlist! We can’t have a road trip without some music to sing along to.
+              That sounds like such a good mix! A cozy bed and breakfast for one night, and then waking up to the ocean view at a motel the next day – I love it. We should definitely pack some snacks for the road, too. And don’t forget a good playlist! We can’t have a road trip without some music to sing along to.
             </p>
             <div className="date">
               <span>3 minutes ago</span>
@@ -133,7 +133,7 @@ const Chat_ngoc = () => {
           <img src={ngoc} alt="" />
           <div className="messageText">
             <p>
-            Absolutely. I’ll get started on the playlist right away. It’ll be a mix of classic rock, indie, and maybe some 80s hits for fun. Do you have any specific songs you want me to add? As for snacks, I was thinking we could stock up on trail mix, fruit, and maybe some chips for the drive. We can also stop by a few local bakeries we pass along the way
+              Absolutely. I’ll get started on the playlist right away. It’ll be a mix of classic rock, indie, and maybe some 80s hits for fun. Do you have any specific songs you want me to add? As for snacks, I was thinking we could stock up on trail mix, fruit, and maybe some chips for the drive. We can also stop by a few local bakeries we pass along the way
             </p>
             <div className="date">
               <span>2 minutes ago</span>
@@ -145,7 +145,7 @@ const Chat_ngoc = () => {
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
             <p>
-            Yes, that sounds perfect! I’ll leave the playlist to you; I trust your taste in music. I’ll handle the snacks – I’ll make sure we have everything we need, and I’ll throw in some chocolate for the drive. Also, I was thinking, since we’re taking the coastal route, maybe we can stop at that lighthouse everyone always talks about. It’s supposed to have an amazing view.
+              Yes, that sounds perfect! I’ll leave the playlist to you; I trust your taste in music. I’ll handle the snacks – I’ll make sure we have everything we need, and I’ll throw in some chocolate for the drive. Also, I was thinking, since we’re taking the coastal route, maybe we can stop at that lighthouse everyone always talks about. It’s supposed to have an amazing view.
             </p>
             <div className="date">
               <span>1 minutes ago</span>
@@ -157,27 +157,24 @@ const Chat_ngoc = () => {
       </div>
 
       <div className="bottom">
-        <div className="icons">
-          <img src={image} alt="" />
-          <img src={cam} alt="" />
-          <img src={mic} alt="" />
-        </div>
 
-        <div className="messageInput">
-          <input
-            type="text"
-            value={text}
-            placeholder="Type a message..."
-            onChange={(e) => setText(e.target.value)}
-          />
-          <div className="emoji">
-            <img src={emoji} alt="" onClick={toggleEmojiPicker} />
-            <div className="picker">
-              {pickEmoji && <EmojiPicker onEmojiClick={handleEmo} />}
-            </div>
+        <img src={image} alt="" />
+        <img src={cam} alt="" />
+        <img src={mic} alt="" />
+
+        <input
+          type="text"
+          value={text}
+          placeholder="Type a message..."
+          onChange={(e) => setText(e.target.value)}
+        />
+        <div className="emoji">
+          <img src={emoji} alt="" onClick={toggleEmojiPicker} />
+          <div className="picker">
+            {pickEmoji && <EmojiPicker onEmojiClick={handleEmo} />}
           </div>
-          <button className="send">Send</button>
         </div>
+        <button className="send">Send</button>
       </div>
     </div>
   );

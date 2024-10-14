@@ -1,9 +1,11 @@
 import React from 'react'
 import './chat.css'
 
-import Chat_group from '../../components/Group_chat/Chat_group'
-import InfoSection from '../../components/InfoSection/InfoSection'
+
 import LeftLayout from '../../components/left_layout/Layout'
+
+import { Outlet } from 'react-router-dom'
+
 
 const Chat = () => {
   return (
@@ -13,11 +15,18 @@ const Chat = () => {
         <LeftLayout />
       </div>
       <div className="chat-section">
-
-        <Chat_group />
-        <InfoSection />
-
+        {/* <Chat_group />
+        <InfoSection />  */}
+        <Outlet />
       </div>
+
+      {/* <div className="chat-section"> */}
+
+      {/* */}
+      {/* <Anothet/>
+
+      </div> */}
+
 
     </div>
   )
