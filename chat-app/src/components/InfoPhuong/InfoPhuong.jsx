@@ -49,30 +49,30 @@ const InfoPhuong = () => {
         />
         <div className="infor-status"></div>
         <p className="profile__name">Phạm Đức Phương</p>
-        <p className="status">Đang hoạt động</p>
+        <p className="status">online</p>
 
         <div className="profile__actions">
           <div className="profile__action-button">
             <img src="/bell.png" alt="Bell Icon" />
-            <p>Tắt thông báo</p>
+            <p>Turn off notification</p>
           </div>
 
           <div className="profile__action-button">
             <img src="/search.png" alt="Search Icon" />
-            <p>Tìm kiếm</p>
+            <p>Search</p>
           </div>
         </div>
       </div>
 
       <div className="menu__section">
-        <p className="menu__section-title" onClick={toggleChatInfo}>Thông tin về đoạn chat
+        <p className="menu__section-title" onClick={toggleChatInfo}>Chat information
           <span className="arrow">{showChatInfo ? '▲' : '▼'}</span>
         </p>
         {showChatInfo && (
           <div>
             <div className="menu__item" onClick={togglePinnedMessageModal}>
               <img src="/pin.png" alt="Pin Icon" className="icon" />
-              Xem tin nhắn đã ghim
+              View pinned messages
             </div>
           </div>
         )}
@@ -80,19 +80,19 @@ const InfoPhuong = () => {
 
 
       <div className="menu__section">
-        <p className="menu__section-title" onClick={toggleChatCustom}>Tùy chỉnh đoạn chat
+        <p className="menu__section-title" onClick={toggleChatCustom}>Customize Chat
           <span className="arrow">{showChatCustom ? '▲' : '▼'}</span>
         </p>
         {showChatCustom && (
           <div>
             <div className="menu__item" onClick={() => openPopup('changeTheme')}>
-              <img src="/chude.png" alt="Theme Icon" className="icon" /> Đổi chủ đề
+              <img src="/chude.png" alt="Theme Icon" className="icon" /> Change theme
             </div>
             <div className="menu__item" onClick={() => openPopup('changeEmoji')}>
-              <img src="/emotion.png" alt="Emoji Icon" className="icon" /> Thay đổi biểu tượng cảm xúc
+              <img src="/emotion.png" alt="Emoji Icon" className="icon" /> Change emoji
             </div>
             <div className="menu__item" onClick={() => openPopup('editNickname')}>
-              <img src="/nickname.png" alt="Nickname Icon" className="icon" /> Chỉnh sửa biệt danh
+              <img src="/nickname.png" alt="Nickname Icon" className="icon" /> Edit nickname
             </div>
           </div>
         )}
@@ -104,13 +104,13 @@ const InfoPhuong = () => {
         <div className="modal-overlay">
           <div className="modal">
             <div className="modal-header">
-              <h2>Tin nhắn đã ghim</h2>
+              <h2>Pinned Messages</h2>
               <button className="close-btn" onClick={togglePinnedMessageModal}>×</button>
             </div>
             <div className="modal-body">
               <img src="/pin_icon.png" alt="Pin Icon" className="modal-icon" />
-              <p>Chưa ghim tin nhắn nào</p>
-              <span>...</span>
+              <p>No messages pinned yet</p>
+              <span>Pinned messages in this chat will appear here</span>
             </div>
           </div>
         </div>
@@ -132,13 +132,13 @@ const InfoPhuong = () => {
 
 
       <div className="menu__section">
-        <p className="menu__section-title" onClick={toggleFiles}> File phương tiện & file
+        <p className="menu__section-title" onClick={toggleFiles}> Media files & files
           <span className="arrow">{showFiles ? '▲' : '▼'}</span>
         </p>
         {showFiles && (
           <div>
             <div className="menu__item">
-              <img src="/file1.png" alt="Media Icon" className="icon" /> File phương tiện</div>
+              <img src="/file1.png" alt="Media Icon" className="icon" /> Media files</div>
             <div className="menu__item">
               <img src="/file.png" alt="File Icon" className="icon" /> File</div>
           </div>
@@ -146,13 +146,13 @@ const InfoPhuong = () => {
       </div>
 
       <div className="menu__section">
-        <p className="menu__section-title" onClick={toggleBlock}>Thêm
+        <p className="menu__section-title" onClick={toggleBlock}>More
           <span className="arrow">{showBlock ? '▲' : '▼'}</span>
         </p>
         {showBlock && (
           <div>
             <div className="menu__item">
-              <img src="/block_user.png" alt="Block Icon" className="icon" /> Chặn</div>
+              <img src="/block_user.png" alt="Block Icon" className="icon" /> Block</div>
           </div>
         )}
       </div>
@@ -163,11 +163,11 @@ const InfoPhuong = () => {
 const getPopupTitle = (type) => {
   switch (type) {
     case 'changeTheme':
-      return 'Đổi chủ đề';
+      return 'Change theme';
     case 'changeEmoji':
-      return 'Thay đổi biểu tượng cảm xúc';
+      return 'Change emoji';
     case 'editNickname':
-      return 'Chỉnh sửa biệt danh';
+      return 'Edit nickname';
     default:
       return '';
   }
@@ -182,7 +182,7 @@ const renderPopupContent = (type) => {
       return <img src="/emoji_a.png" alt="Theme Image" style={{ width: '100%' }} />;
 
     case 'editNickname':
-      return <input type="text" placeholder="Nhập biệt danh mới" />;
+      return <input type="text" placeholder="Enter a new nickname" />;
     default:
       return null;
   }
