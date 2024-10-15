@@ -1,20 +1,19 @@
 import React from 'react'
 import './Merge_phuong.css'
 
-import Chat_phuong from '../../../Chat_phuong/Chat_phuong'
-import InfoPhuong from '../../../Infophuong/infophuong'
+
+import InfoPhuong from '../../InfoPhuong/InfoPhuong'
+import Chat_phuong from '../../Chat_phuong/Chat_phuong'
 
 
 const Merge_phuong = () => {
   return (
 
-    <div class="main_merge_phuong">
-      <div className="merge_phuong">
-        <Chat_phuong />
-        <InfoPhuong />
-      </div>
-
+    <div class="chatbox-section">
+      <Chat_phuong />
+      <InfoPhuong />
     </div>
+
   )
 }
 

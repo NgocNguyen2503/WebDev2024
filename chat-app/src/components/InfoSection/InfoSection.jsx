@@ -1,29 +1,29 @@
-import React, { useState } from 'react'; 
+import React, { useState } from 'react';
 import './InfoSection.css';
-
+import group_img from '../../assets/group.png'
 const InfoSection = () => {
   const [showChatInfo, setShowChatInfo] = useState(false);
   const [showChatSettings, setShowChatSettings] = useState(false);
   const [showMembers, setShowMembers] = useState(false);
-  const [showFiles, setShowFiles] = useState(false); 
+  const [showFiles, setShowFiles] = useState(false);
   const [activeSection, setActiveSection] = useState(null);
-  const [isPinnedMessageVisible, setIsPinnedMessageVisible] = useState(false); 
-  const [popupType, setPopupType] = useState(''); 
+  const [isPinnedMessageVisible, setIsPinnedMessageVisible] = useState(false);
+  const [popupType, setPopupType] = useState('');
 
   const toggleSection = (section) => {
     setActiveSection(activeSection === section ? null : section);
   };
 
   const togglePinnedMessageModal = () => {
-    setIsPinnedMessageVisible(!isPinnedMessageVisible); 
+    setIsPinnedMessageVisible(!isPinnedMessageVisible);
   };
 
   const openPopup = (type) => {
-    setPopupType(type); 
+    setPopupType(type);
   };
 
   const closePopup = () => {
-    setPopupType(''); 
+    setPopupType('');
   };
 
   const toggleChatInfo = () => {
@@ -44,16 +44,16 @@ const InfoSection = () => {
 
   return (
     <div className="info-section">
-      {}
+      { }
       <div className="profile">
         <div className="avatar-container">
-          <img src="/nghia_ava.png" alt="Nghia Avatar" className="avatar" />
+          <img src={group_img} alt="Group Avatar" className="avatar" />
         </div>
         <h3>Web Group 2024</h3>
         <p className="status">Active</p>
       </div>
 
-      {}
+      { }
       <div className="action-buttons">
         <div className="action-btn">
           <img src="/bell.png" alt="Bell Icon" />
@@ -65,7 +65,7 @@ const InfoSection = () => {
         </div>
       </div>
 
-      {}
+      { }
       <ul className="options">
         <li onClick={toggleChatInfo}>
           Chat Information
@@ -109,7 +109,7 @@ const InfoSection = () => {
           </ul>
         )}
 
-        {}
+        { }
         <li onClick={toggleMembers}>
           Chat Members
           <span className="arrow">{showMembers ? '▲' : '▼'}</span>
@@ -165,7 +165,7 @@ const InfoSection = () => {
           </ul>
         )}
 
-        {}
+        { }
         <li onClick={toggleFiles}>
           Media, Files, and Links
           <span className="arrow">{showFiles ? '▲' : '▼'}</span>
@@ -191,7 +191,7 @@ const InfoSection = () => {
           Leave Group
         </li>
 
-        {}
+        { }
         {isPinnedMessageVisible && (
           <div className="modal-overlay">
             <div className="modal">
@@ -206,7 +206,7 @@ const InfoSection = () => {
           </div>
         )}
 
-        {}
+        { }
         {popupType && (
           <div className="modal-overlay">
             <div className="modal">

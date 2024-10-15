@@ -28,7 +28,7 @@ const Login = () => {
                         <input type="email" placeholder='Email address' />
                         <input type="password" placeholder='Password' />
                         <div className="button-signup">
-                            <Link to='/chat' style={{ textDecoration: "none" }}>
+                            <Link to='/chat/1' style={{ textDecoration: "none" }}>
                                 <button>Log in</button>
                             </Link>
                             <p>New to ChatApp? <Link to='/signup' style={{ textDecoration: "none" }}><span className='sign-up-btn'>Sign up</span></Link> now</p>

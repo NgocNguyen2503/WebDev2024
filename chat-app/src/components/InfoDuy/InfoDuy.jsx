@@ -1,6 +1,6 @@
 import './infoDuy.css';
 import { useState } from 'react';
-
+import duy_img from '../../assets/duy_img.jpg'
 const InfoDuy = () => {
   const [showChatInfo, setShowChatInfo] = useState(false);
   const [showChatCustom, setShowChatCustom] = useState(false);
@@ -8,60 +8,61 @@ const InfoDuy = () => {
   const [showBlock, setShowBlock] = useState(false);
   const [isPinnedMessageVisible, setIsPinnedMessageVisible] = useState(false);
   const [popupType, setPopupType] = useState('');
-  
-const toggleChatInfo = () => {
+
+  const toggleChatInfo = () => {
     setShowChatInfo(!showChatInfo);
   }
-const toggleChatCustom = () => {
+  const toggleChatCustom = () => {
     setShowChatCustom(!showChatCustom);
   }
 
-const toggleFiles = () => {
+  const toggleFiles = () => {
     setShowFiles(!showFiles);
   }
 
-const toggleBlock = () => {
+  const toggleBlock = () => {
     setShowBlock(!showBlock);
   }
 
-const togglePinnedMessageModal = () => {
-    setIsPinnedMessageVisible(!isPinnedMessageVisible); 
+  const togglePinnedMessageModal = () => {
+    setIsPinnedMessageVisible(!isPinnedMessageVisible);
   }
 
-const openPopup = (type) => {
-    setPopupType(type); 
+  const openPopup = (type) => {
+    setPopupType(type);
   }
 
-const closePopup = () => {
-    setPopupType(''); 
+  const closePopup = () => {
+    setPopupType('');
   };
 
 
-return (
-    <div className="sidebar"> 
-    
+  return (
+    <div className="sidebar-person">
+
       <div className="sidebar__profile">
         <img
-          src="duy.jpg"
+          src={duy_img}
           alt="Profile"
           className="profile__image"
         />
+        <div className="infor-status"></div>
         <p className="profile__name">Đăng Duy</p>
         <p className="status">Đang hoạt động</p>
-  
+
         <div className="profile__actions">
           <div className="profile__action-button">
             <img src="/bell.png" alt="Bell Icon" />
             <p>Tắt thông báo</p>
           </div>
-  
+
           <div className="profile__action-button">
             <img src="/search.png" alt="Search Icon" />
             <p>Tìm kiếm</p>
           </div>
         </div>
       </div>
-  
+
       <div className="menu__section">
         <p className="menu__section-title" onClick={toggleChatInfo}>Thông tin về đoạn chat
           <span className="arrow">{showChatInfo ? '▲' : '▼'}</span>
@@ -69,17 +70,17 @@ return (
         {showChatInfo && (
           <div>
             <div className="menu__item" onClick={togglePinnedMessageModal}>
-              <img src="/pin.png" alt="Pin Icon" className="icon" /> 
+              <img src="/pin.png" alt="Pin Icon" className="icon" />
               Xem tin nhắn đã ghim
             </div>
           </div>
         )}
       </div>
-      
-        
+
+
       <div className="menu__section">
         <p className="menu__section-title" onClick={toggleChatCustom}>Tùy chỉnh đoạn chat
-        <span className="arrow">{showChatCustom ? '▲' : '▼'}</span>
+          <span className="arrow">{showChatCustom ? '▲' : '▼'}</span>
         </p>
         {showChatCustom && (
           <div>
@@ -89,7 +90,7 @@ return (
             <div className="menu__item" onClick={() => openPopup('changeEmoji')}>
               <img src="/emotion.png" alt="Emoji Icon" className="icon" /> Thay đổi biểu tượng cảm xúc
             </div>
-            <div className="menu__item"onClick={() => openPopup('editNickname')}>
+            <div className="menu__item" onClick={() => openPopup('editNickname')}>
               <img src="/nickname.png" alt="Nickname Icon" className="icon" /> Chỉnh sửa biệt danh
             </div>
           </div>
@@ -99,36 +100,36 @@ return (
 
 
       {isPinnedMessageVisible && (
-  <div className="modal-overlay">
-    <div className="modal">
-      <div className="modal-header">
-        <h2>Tin nhắn đã ghim</h2>
-        <button className="close-btn" onClick={togglePinnedMessageModal}>×</button>
-      </div>
-      <div className="modal-body">
-        <img src="/pin_icon.png" alt="Pin Icon" className="modal-icon" />
-        <p>Chưa ghim tin nhắn nào</p>
-        <span>...</span>
-      </div>
-    </div>
-  </div>
-)}
-
-        {popupType && (
-          <div className="modal-overlay">
-            <div className="modal">
-              <div className="modal-header">
-                <h2>{getPopupTitle(popupType)}</h2>
-                <button className="close-btn" onClick={closePopup}>×</button>
-              </div>
-              <div className="modal-body">
-                {renderPopupContent(popupType)}
-              </div>
+        <div className="modal-overlay">
+          <div className="modal">
+            <div className="modal-header">
+              <h2>Tin nhắn đã ghim</h2>
+              <button className="close-btn" onClick={togglePinnedMessageModal}>×</button>
+            </div>
+            <div className="modal-body">
+              <img src="/pin_icon.png" alt="Pin Icon" className="modal-icon" />
+              <p>Chưa ghim tin nhắn nào</p>
+              <span>...</span>
             </div>
           </div>
-        )}
-  
-      
+        </div>
+      )}
+
+      {popupType && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <div className="modal-header">
+              <h2>{getPopupTitle(popupType)}</h2>
+              <button className="close-btn" onClick={closePopup}>×</button>
+            </div>
+            <div className="modal-body">
+              {renderPopupContent(popupType)}
+            </div>
+          </div>
+        </div>
+      )}
+
+
       <div className="menu__section">
         <p className="menu__section-title" onClick={toggleFiles}> File phương tiện & file
           <span className="arrow">{showFiles ? '▲' : '▼'}</span>
@@ -142,9 +143,9 @@ return (
           </div>
         )}
       </div>
-  
+
       <div className="menu__section">
-        <p className="menu__section-title" onClick={toggleBlock}>Thêm 
+        <p className="menu__section-title" onClick={toggleBlock}>Thêm
           <span className="arrow">{showBlock ? '▲' : '▼'}</span>
         </p>
         {showBlock && (
@@ -154,7 +155,7 @@ return (
           </div>
         )}
       </div>
-    </div> 
+    </div>
   );
 };
 
@@ -178,7 +179,7 @@ const renderPopupContent = (type) => {
       return <img src="/cde.png" alt="Theme Image" style={{ width: '100%' }} />;
     case 'changeEmoji':
       return <img src="/emoji_a.png" alt="Theme Image" style={{ width: '100%' }} />;
-              
+
     case 'editNickname':
       return <input type="text" placeholder="Nhập biệt danh mới" />;
     default:

@@ -39,6 +39,7 @@ const Chat_group = () => {
       <div className="top">
         <div className="user">
           <img src={ava_group} alt="" />
+          <div className="user-status"></div>
           <div className="userDetails">
             <span>Web application group</span>
             <p>online</p>
