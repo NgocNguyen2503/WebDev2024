@@ -64,6 +64,9 @@
   color: white;
   border-radius: 20px;
 } */
+.Conversations a {
+  color: inherit;
+}
 
 .chat-item {
   display: flex;

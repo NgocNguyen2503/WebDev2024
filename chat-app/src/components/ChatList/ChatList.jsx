@@ -59,6 +59,7 @@ const ChatList = () => {
           <Link to={`${index + 1}`} style={{ textDecoration: 'none' }}>
             <div className="chat-item" key={index}>
               <img src={item.img} alt={item.name} className="chat-item-img" />
+              <div className="left-status"></div>
               <div className="chat-item-content">
                 <h4>{item.name}</h4>
                 <p>{item.lastMessage}</p>

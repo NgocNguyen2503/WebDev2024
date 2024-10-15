@@ -47,6 +47,7 @@ const InfoPhuong = () => {
           alt="Profile"
           className="profile__image"
         />
+        <div className="infor-status"></div>
         <p className="profile__name">Phạm Đức Phương</p>
         <p className="status">Đang hoạt động</p>
 

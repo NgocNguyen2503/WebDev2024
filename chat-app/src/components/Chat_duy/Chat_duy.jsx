@@ -39,6 +39,7 @@ const Chat_duy = () => {
       <div className="top">
         <div className="user">
           <img src={duy} alt="" />
+          <div className="user-status"></div>
           <div className="userDetails">
             <span>Đăng Duy</span>
             <p>online</p>

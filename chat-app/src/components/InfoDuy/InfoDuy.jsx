@@ -46,6 +46,7 @@ const InfoDuy = () => {
           alt="Profile"
           className="profile__image"
         />
+        <div className="infor-status"></div>
         <p className="profile__name">Đăng Duy</p>
         <p className="status">Đang hoạt động</p>
 

@@ -47,6 +47,7 @@ const InfoNghia = () => {
           alt="Profile"
           className="profile__image"
         />
+        <div className="infor-status"></div>
         <p className="profile__name">Nghia Nguyen</p>
         <p className="status">Đang hoạt động</p>
 

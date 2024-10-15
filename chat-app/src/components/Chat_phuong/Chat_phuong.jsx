@@ -39,6 +39,7 @@ const Chat_phuong = () => {
       <div className="top">
         <div className="user">
           <img src={phuong} alt="" />
+          <div className="user-status"></div>
           <div className="userDetails">
             <span>Phương Phạm Đức</span>
             <p>online</p>

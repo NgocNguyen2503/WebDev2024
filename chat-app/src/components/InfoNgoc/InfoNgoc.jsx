@@ -47,6 +47,7 @@ const InfoNgoc = () => {
           alt="Profile"
           className="profile__image"
         />
+        <div className="infor-status"></div>
         <p className="profile__name">Nguyễn Quang Ngọc</p>
         <p className="status">Đang hoạt động</p>
 

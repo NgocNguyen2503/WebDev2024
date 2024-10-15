@@ -39,6 +39,7 @@ const Chat_ngoc = () => {
       <div className="top">
         <div className="user">
           <img src={ngoc} alt="" />
+          <div className="user-status"></div>
           <div className="userDetails">
             <span>Nguyễn Quang Ngọc</span>
             <p>online</p>

@@ -49,6 +49,7 @@ const InfoSection = () => {
         <div className="avatar-container">
           <img src={group_img} alt="Group Avatar" className="avatar" />
         </div>
+        <div className="infor-status"></div>
         <h3>Nhóm Web 2024</h3>
         <p className="status">Đang hoạt động</p>
       </div>
