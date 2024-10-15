@@ -2,8 +2,8 @@ import React from 'react'
 import './Merge_phuong.css'
 
 
-import InfoPhuong from '../../InfoPhuong/InfoPhuong'
-import Chat_phuong from '../../Chat_phuong/Chat_phuong'
+import Chat_phuong from '../../mid/Chat_phuong/Chat_phuong'
+import InfoPhuong from '../../right/InfoPhuong/InfoPhuong'
 
 
 const Merge_phuong = () => {
