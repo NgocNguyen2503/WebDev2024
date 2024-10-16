@@ -84,10 +84,6 @@ const InfoSection = () => {
               <img src="/chude.png" alt="Theme Icon" className="icon" />
               Change theme
             </li>
-            <li onClick={() => openPopup('changeEmoji')}>
-              <img src="/emotion.png" alt="Emoji Icon" className="icon" />
-              Change emoji
-            </li>
             <li onClick={() => openPopup('editNickname')}>
               <img src="/nickname.png" alt="Nickname Icon" className="icon" />
               Edit nickname
@@ -199,8 +195,6 @@ const getPopupTitle = (type) => {
       return 'Change Image';
     case 'changeTheme':
       return 'Change Theme';
-    case 'changeEmoji':
-      return 'Change Emoji';
     case 'editNickname':
       return 'Edit Nickname';
     case 'pinnedMessages':
@@ -218,8 +212,6 @@ const renderPopupContent = (type) => {
       return <input type="file" />;
     case 'changeTheme':
       return <img src="/cde.png" alt="Theme Image" style={{ width: '100%' }} />;
-    case 'changeEmoji':
-      return <img src="/emoji_a.png" alt="Emoji Image" style={{ width: '100%' }} />;
     case 'editNickname':
       return <input type="text" placeholder="Enter new nickname" />;
     case 'pinnedMessages':
