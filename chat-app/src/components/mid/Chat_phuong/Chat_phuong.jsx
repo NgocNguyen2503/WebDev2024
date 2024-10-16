@@ -10,9 +10,7 @@ import mic from '../../../assets/microphone.png'
 import image from '../../../assets/image-gallery.png'
 import cam from '../../../assets/camera.png'
 import nghia from '../../../assets/nghia_img.jpg'
-import duy from '../../../assets/duy_img.jpg'
-import ngoc from '../../../assets/ngoc_img.png'
-import duc from '../../../assets/duc_img.jpg'
+
 import phuong from '../../../assets/phuong_img.jpg'
 
 import { useState } from "react";
@@ -41,7 +39,7 @@ const Chat_phuong = () => {
           <img src={phuong} alt="" />
           <div className="user-status"></div>
           <div className="userDetails">
-            <span>Phương Phạm Đức</span>
+            <span>Phuong Pham Duc</span>
             <p>online</p>
           </div>
         </div>

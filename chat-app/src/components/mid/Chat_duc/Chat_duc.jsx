@@ -1,6 +1,6 @@
 import React from 'react'
 import "./chat_duc.css"
-import ava_group from '../../../assets/group.png'
+
 import phone from '../../../assets/phone-call.png'
 import phone_vid from '../../../assets/video-camera-alt.png'
 import send from '../../../assets/send_button.png'
@@ -10,10 +10,8 @@ import mic from '../../../assets/microphone.png'
 import image from '../../../assets/image-gallery.png'
 import cam from '../../../assets/camera.png'
 import nghia from '../../../assets/nghia_img.jpg'
-import duy from '../../../assets/duy_img.jpg'
-import ngoc from '../../../assets/ngoc_img.png'
 import duc from '../../../assets/duc_img.jpg'
-import phuong from '../../../assets/phuong_img.jpg'
+
 
 import { useState } from "react";
 
@@ -41,7 +39,7 @@ const Chat_duc = () => {
           <img src={duc} alt="" />
           <div className="user-status"></div>
           <div className="userDetails">
-            <span>Nguyễn Minh Đức</span>
+            <span>Nguyen Minh Duc</span>
             <p>online</p>
           </div>
         </div>

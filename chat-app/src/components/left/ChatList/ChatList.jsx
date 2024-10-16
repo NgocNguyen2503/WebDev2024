@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 const ChatList = () => {
   const chatItems = [
     {
-      name: 'Web Application',
+      name: 'Web application group',
       lastMessage: 'Thank, Phuong!...',
       img: ava_group,
     },
@@ -28,7 +28,7 @@ const ChatList = () => {
       img: ngoc,
     },
     {
-      name: 'Nguyen Trong Nghia',
+      name: 'Nghia Nguyen',
       lastMessage: 'Today was...',
       img: nghia,
     },

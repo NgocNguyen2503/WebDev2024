@@ -49,11 +49,12 @@ const InfoSection = () => {
         <div className="avatar-container">
           <img src={group_img} alt="Group Avatar" className="avatar" />
         </div>
-        <h3>Web Group 2024</h3>
+        <div className="infor-status"></div>
+        <h3>Web application group</h3>
         <p className="status">Active</p>
       </div>
 
-      { }
+      
       <div className="action-buttons">
         <div className="action-btn">
           <img src="/bell.png" alt="Bell Icon" />
@@ -65,7 +66,7 @@ const InfoSection = () => {
         </div>
       </div>
 
-      { }
+      
       <ul className="options">
         <li onClick={toggleChatInfo}>
           Chat Information
@@ -109,7 +110,7 @@ const InfoSection = () => {
           </ul>
         )}
 
-        { }
+        
         <li onClick={toggleMembers}>
           Chat Members
           <span className="arrow">{showMembers ? '▲' : '▼'}</span>
@@ -165,7 +166,7 @@ const InfoSection = () => {
           </ul>
         )}
 
-        { }
+       
         <li onClick={toggleFiles}>
           Media, Files, and Links
           <span className="arrow">{showFiles ? '▲' : '▼'}</span>
@@ -191,7 +192,7 @@ const InfoSection = () => {
           Leave Group
         </li>
 
-        { }
+        
         {isPinnedMessageVisible && (
           <div className="modal-overlay">
             <div className="modal">
@@ -206,7 +207,7 @@ const InfoSection = () => {
           </div>
         )}
 
-        { }
+        
         {popupType && (
           <div className="modal-overlay">
             <div className="modal">

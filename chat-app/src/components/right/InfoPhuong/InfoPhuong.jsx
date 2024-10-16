@@ -48,7 +48,7 @@ const InfoPhuong = () => {
           className="profile__image"
         />
         <div className="infor-status"></div>
-        <p className="profile__name">Phạm Đức Phương</p>
+        <p className="profile__name">Phuong Pham Duc</p>
         <p className="status">online</p>
 
         <div className="profile__actions">
