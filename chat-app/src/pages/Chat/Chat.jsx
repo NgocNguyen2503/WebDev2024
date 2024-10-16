@@ -2,7 +2,7 @@ import React from 'react'
 import './chat.css'
 
 
-import LeftLayout from '../../components/left_layout/Layout'
+import LeftLayout from '../../components/left/left_layout/Layout'
 
 import { Outlet } from 'react-router-dom'
 

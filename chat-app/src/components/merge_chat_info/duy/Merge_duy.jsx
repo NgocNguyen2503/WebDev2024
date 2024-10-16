@@ -2,8 +2,8 @@ import React from 'react'
 import './Merge_duy.css'
 
 
-import InfoDuy from '../../InfoDuy/InfoDuy'
-import Chat_duy from '../../Chat_duy/Chat_duy'
+import Chat_duy from '../../mid/Chat_duy/Chat_duy'
+import InfoDuy from '../../right/InfoDuy/InfoDuy'
 
 
 const Merge_duy = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import './features.css'
-import Freatures_item1 from '../../components/Features_item1/Freatures_item1'
-import Freatures_item2 from '../../components/Features_item2/Features_item2'
+import Freatures_item1 from '../../components/login/Features_item1/Freatures_item1'
+import Freatures_item2 from '../../components/login/Features_item2/Features_item2'
 const Features = () => {
     return (
         <div className='features'>
