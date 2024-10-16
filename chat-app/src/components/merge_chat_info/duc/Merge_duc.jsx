@@ -1,8 +1,8 @@
 import React from 'react'
 import './Merge_duc.css'
 
-import Chat_duc from '../../../components/Chat_duc/Chat_duc'
-import InfoDuc from '../../InfoDuc/InfoDuc'
+import Chat_duc from '../../mid/Chat_duc/Chat_duc'
+import InfoDuc from '../../right/InfoDuc/InfoDuc'
 
 
 

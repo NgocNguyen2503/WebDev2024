@@ -1,6 +1,6 @@
 import React from 'react'
 import windows from '../../assets/computer.png'
-import laptop from '../../assets/laptop_image.png'
+import laptop from '../../assets/splash_screen.png'
 import './DesktopApp.css'
 
 const DesktopApp = () => {

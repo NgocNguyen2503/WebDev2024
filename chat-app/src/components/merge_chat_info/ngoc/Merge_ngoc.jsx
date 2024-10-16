@@ -2,8 +2,8 @@ import React from 'react'
 import './Merge_ngoc.css'
 
 
-import InfoNgoc from '../../InfoNgoc/InfoNgoc'
-import Chat_ngoc from '../../Chat_ngoc/Chat_ngoc'
+import Chat_ngoc from '../../mid/Chat_ngoc/Chat_ngoc'
+import InfoNgoc from '../../right/InfoNgoc/InfoNgoc'
 
 
 const Merge_ngoc = () => {

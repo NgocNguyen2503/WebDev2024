@@ -2,8 +2,8 @@ import React from 'react'
 import './Merge_nghia.css'
 
 
-import InfoNghia from '../../InfoNghia/InfoNghia'
-import Chat_nghia from '../../Chat_nghia/Chat_nghia'
+import Chat_nghia from '../../mid/Chat_nghia/Chat_nghia'
+import InfoNghia from '../../right/InfoNghia/InfoNghia'
 
 
 const Merge_nghia = () => {
