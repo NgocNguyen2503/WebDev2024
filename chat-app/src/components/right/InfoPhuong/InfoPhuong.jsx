@@ -88,9 +88,6 @@ const InfoPhuong = () => {
             <div className="menu__item" onClick={() => openPopup('changeTheme')}>
               <img src="/chude.png" alt="Theme Icon" className="icon" /> Change theme
             </div>
-            <div className="menu__item" onClick={() => openPopup('changeEmoji')}>
-              <img src="/emotion.png" alt="Emoji Icon" className="icon" /> Change emoji
-            </div>
             <div className="menu__item" onClick={() => openPopup('editNickname')}>
               <img src="/nickname.png" alt="Nickname Icon" className="icon" /> Edit nickname
             </div>
@@ -164,8 +161,6 @@ const getPopupTitle = (type) => {
   switch (type) {
     case 'changeTheme':
       return 'Change theme';
-    case 'changeEmoji':
-      return 'Change emoji';
     case 'editNickname':
       return 'Edit nickname';
     default:
@@ -178,9 +173,6 @@ const renderPopupContent = (type) => {
   switch (type) {
     case 'changeTheme':
       return <img src="/cde.png" alt="Theme Image" style={{ width: '100%' }} />;
-    case 'changeEmoji':
-      return <img src="/emoji_a.png" alt="Theme Image" style={{ width: '100%' }} />;
-
     case 'editNickname':
       return <input type="text" placeholder="Enter a new nickname" />;
     default:
