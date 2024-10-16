@@ -163,7 +163,7 @@ const InfoDuc = () => {
 const getPopupTitle = (type) => {
   switch (type) {
     case 'changeTheme':
-      return 'Change theme';
+      return 'Change Theme';
     case 'changeEmoji':
       return 'Change emoji';
     case 'editNickname':
