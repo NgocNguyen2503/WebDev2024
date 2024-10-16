@@ -6,17 +6,7 @@ const InfoSection = () => {
   const [showChatSettings, setShowChatSettings] = useState(false);
   const [showMembers, setShowMembers] = useState(false);
   const [showFiles, setShowFiles] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
-  const [isPinnedMessageVisible, setIsPinnedMessageVisible] = useState(false);
   const [popupType, setPopupType] = useState('');
-
-  const toggleSection = (section) => {
-    setActiveSection(activeSection === section ? null : section);
-  };
-
-  const togglePinnedMessageModal = () => {
-    setIsPinnedMessageVisible(!isPinnedMessageVisible);
-  };
 
   const openPopup = (type) => {
     setPopupType(type);
@@ -41,20 +31,16 @@ const InfoSection = () => {
   const toggleFiles = () => {
     setShowFiles(!showFiles);
   };
-
   return (
     <div className="info-section">
-      { }
       <div className="profile">
         <div className="avatar-container">
           <img src={group_img} alt="Group Avatar" className="avatar" />
         </div>
-        <div className="infor-status"></div>
-        <h3>Web application group</h3>
+        <h3>Web Group 2024</h3>
         <p className="status">Active</p>
       </div>
 
-      
       <div className="action-buttons">
         <div className="action-btn">
           <img src="/bell.png" alt="Bell Icon" />
@@ -66,7 +52,6 @@ const InfoSection = () => {
         </div>
       </div>
 
-      
       <ul className="options">
         <li onClick={toggleChatInfo}>
           Chat Information
@@ -74,7 +59,7 @@ const InfoSection = () => {
         </li>
         {showChatInfo && (
           <ul className="sub-options">
-            <li onClick={togglePinnedMessageModal}>
+            <li onClick={() => openPopup('pinnedMessages')}>
               <img src="/pin.png" alt="Pin Icon" className="icon" />
               View pinned messages
             </li>
@@ -110,7 +95,6 @@ const InfoSection = () => {
           </ul>
         )}
 
-        
         <li onClick={toggleMembers}>
           Chat Members
           <span className="arrow">{showMembers ? '▲' : '▼'}</span>
@@ -145,7 +129,7 @@ const InfoSection = () => {
               <img src="/ngoc_ava.png" alt="Nguyen Quang Ngoc" className="member-avatar" />
               <div>
                 <p>Nguyen Quang Ngoc</p>
-                <div className='admin'>Group Creator</div>
+                <div className="admin">Group Creator</div>
               </div>
               <div className="member-options">...</div>
             </li>
@@ -160,13 +144,12 @@ const InfoSection = () => {
             <li className="member-item">
               <img src="/add_member.png" alt="Add User Icon" className="member-avatar" />
               <div>
-                <div className='add'>Add Member</div>
+                <div className="add">Add Member</div>
               </div>
             </li>
           </ul>
         )}
 
-       
         <li onClick={toggleFiles}>
           Media, Files, and Links
           <span className="arrow">{showFiles ? '▲' : '▼'}</span>
@@ -188,26 +171,8 @@ const InfoSection = () => {
           </ul>
         )}
 
-        <li className="options-item">
-          Leave Group
-        </li>
+        <li className="options-item">Leave Group</li>
 
-        
-        {isPinnedMessageVisible && (
-          <div className="modal-overlay">
-            <div className="modal">
-              <div className="modal-header">
-                <h2>Pinned Messages</h2>
-                <button className="close-btn" onClick={togglePinnedMessageModal}>×</button>
-              </div>
-              <div className="modal-body">
-                <p>No pinned messages</p>
-              </div>
-            </div>
-          </div>
-        )}
-
-        
         {popupType && (
           <div className="modal-overlay">
             <div className="modal">
@@ -238,6 +203,8 @@ const getPopupTitle = (type) => {
       return 'Change Emoji';
     case 'editNickname':
       return 'Edit Nickname';
+    case 'pinnedMessages':
+      return 'Pinned Messages';
     default:
       return '';
   }
@@ -253,13 +220,13 @@ const renderPopupContent = (type) => {
       return <img src="/cde.png" alt="Theme Image" style={{ width: '100%' }} />;
     case 'changeEmoji':
       return <img src="/emoji_a.png" alt="Emoji Image" style={{ width: '100%' }} />;
-              
     case 'editNickname':
       return <input type="text" placeholder="Enter new nickname" />;
+    case 'pinnedMessages':
+      return <p>No pinned messages</p>;
     default:
       return null;
   }
 };
 
 export default InfoSection;
-
