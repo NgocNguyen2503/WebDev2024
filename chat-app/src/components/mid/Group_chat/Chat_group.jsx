@@ -3,7 +3,6 @@ import "./chat_group.css"
 import ava_group from '../../../assets/group.png'
 import phone from '../../../assets/phone-call.png'
 import phone_vid from '../../../assets/video-camera-alt.png'
-import send from '../../../assets/send_button.png'
 import emoji from '../../../assets/happiness.png'
 import menu from '../../../assets/menu-burger.png'
 import mic from '../../../assets/microphone.png'
@@ -134,7 +133,7 @@ const Chat_group = () => {
           <img src={phuong} alt="" />
           <div className="messageText">
             <p>
-              I think it’s best if we book it as soon as possible. These kinds of places tend to fill up fast, especially with the nice weather lately. I can check online and make the reservation if everyone’s on board.
+              I think it’s best if we book it as soon as possible. These kinds of places tend to fill up fast, especially with the nice weather lately. I can check online and make the reservation if everyone’s on board.👍
             </p>
             <div className="date">
               <span>2 minutes ago</span>
@@ -146,7 +145,7 @@ const Chat_group = () => {
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
             <p>
-              Thanks, Phuong! I’m totally in for next weekend. I can also help with the planning—like food, activities, and stuff. Should we make it a two-day trip, or maybe extend it to three days if everyone’s schedule allows?
+              Thanks, Phuong! I’m totally in for next weekend. I can also help with the planning—like food, activities, and stuff. Should we make it a two-day trip, or maybe extend it to three days if everyone’s schedule allows?😊
             </p>
             <div className="date">
               <span>1 minutes ago</span>

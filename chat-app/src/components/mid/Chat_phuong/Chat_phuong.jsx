@@ -144,7 +144,7 @@ const Chat_phuong = () => {
           {/* <img src={ava_group} alt="" /> */}
           <div className="messageText">
             <p>
-              Sounds like a solid plan. I’ll start researching influencers who are popular in the demographic we’re targeting, and I’ll make a list of potential candidates for us to review. I’ll also look into some past campaigns that have been successful with this audience and see if there’s anything we can learn from them. We can bring all of that to the brainstorming session.
+              Sounds like a solid plan😊. I’ll start researching influencers who are popular in the demographic we’re targeting, and I’ll make a list of potential candidates for us to review. I’ll also look into some past campaigns that have been successful with this audience and see if there’s anything we can learn from them. We can bring all of that to the brainstorming session.
             </p>
             <div className="date">
               <span>1 minutes ago</span>
