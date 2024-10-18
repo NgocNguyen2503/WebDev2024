@@ -15,18 +15,9 @@ const Chat = () => {
         <LeftLayout />
       </div>
       <div className="chat-section">
-        {/* <Chat_group />
-        <InfoSection />  */}
+
         <Outlet />
       </div>
-
-      {/* <div className="chat-section"> */}
-
-      {/* */}
-      {/* <Anothet/>
-
-      </div> */}
-
 
     </div>
   )
