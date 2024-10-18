@@ -5,7 +5,7 @@ const Freatures_item2 = (props) => {
     return (
         <div className='feature_item2'>
             <div className="feature-img">
-                <img src={props.image} alt="features image" />
+                <img src={props.image} alt="features image" style={{marginRight: props.marginRight}}/>
             </div>
             <div className="feature-desc">
                 <div className="feature-title">

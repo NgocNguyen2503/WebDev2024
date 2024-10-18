@@ -13,7 +13,7 @@ const Freatures_item1 = (props) => {
         </div>
       </div>
       <div className="feature-img">
-        <img src={props.image} alt="features image" />
+        <img src={props.image} alt="features image" style={{marginLeft: props.marginLeft}} />
       </div>
     </div>
   )
