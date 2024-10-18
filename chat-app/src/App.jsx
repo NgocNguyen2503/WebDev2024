@@ -19,8 +19,9 @@ import Merge_duy from './components/merge_chat_info/duy/Merge_duy'
 
 
 const App = () => {
-  const location = useLocation()
+  const location = useLocation();
   const showNavbar = location.pathname == '/' || location.pathname == '/signup ' || location.pathname == '/features' || location.pathname == '/desktop-app' || location.pathname == '/privacy' || location.pathname == '/signup';
+  
   return (
 
     <>
@@ -40,9 +41,8 @@ const App = () => {
           <Route path='6' element={<Merge_duy />} />
         </Route>
         
-
-
       </Routes>
+      
     </>
   )
 }

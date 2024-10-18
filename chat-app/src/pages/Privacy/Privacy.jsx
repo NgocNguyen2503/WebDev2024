@@ -2,6 +2,10 @@ import React from 'react'
 import './Privacy.css'
 import using_app from '../../assets/person-using-laptop.jpg'
 import data_protection from '../../assets/data_protection.avif'
+import unwanted from '../../assets/unwanted_interact.svg'
+import control_letin from'../../assets/control_letin.svg'
+import misinfor from '../../assets/misinfor.svg'
+import safe_community from '../../assets/safe_community.svg'
 
 const Privacy = () => {
     return (
@@ -72,22 +76,40 @@ const Privacy = () => {
 
                     <div className="content-cards">
                         <div className="card1">
-                            <p className="card-title">Reduce unwanted interactions</p>
+                            <div className="card-title">
+                                <img src={unwanted} ></img>
+                                <p className="card-title">Reduce unwanted interactions</p>
+                            </div>
+                            
                             <p className="card-content">We filter potentially harmful messages so they don’t reach your inbox. Safety notices may pop up in your chats to help you spot potential scams or imposters, and we detect and block millions of fake accounts on Facebook every day.</p>
                         </div>
 
                         <div className="card2">
-                            <p className="card-title">Control who you let in</p>
+
+                            <div className="card-title">
+                                <img src={control_letin} ></img>
+                                <p className="card-title">Control who you let in</p>
+                            </div>
+                            
                             <p className="card-content">Messenger continuously innovates to protect you from harm, and tools like multi block help you control your experience. You decide who reaches your Chats list, who goes to your Message Request folder, and who can’t message or call you at all.</p>
                         </div>
 
                         <div className="card3">
-                            <p className="card-title">Reduce the spread of misinformation</p>
+                            <div className="card-title">
+
+                                <img src={misinfor} ></img>
+                                <p className="card-title">Reduce the spread of misinformation</p>
+
+                            </div>
                             <p className="card-content">To help reduce the spread of viral misinformation and harmful content, we limit the number of chats a message can be forwarded to at one time. We also have additional protections in place for content that has been identified as misinformation and shared directly into ChatApp</p>
                         </div>
 
                         <div className="card4">
-                            <p className="card-title">Foster a safer community</p>
+                            <div className="card-title">
+                                <img src={safe_community} ></img>
+                                <p className="card-title">Foster a safer community</p>
+
+                            </div>
                             <p className="card-content">If you come across possible harmful content or behavior, such as harassment or impersonation, please report it. If we see that it violates our Community Standards, we’ll take appropriate action, which could include disabling their account or limiting their ability to send messages.</p>
                         </div>
                     </div>
